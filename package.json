@@ -8,12 +8,12 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.10.0",
     "@iconify/json": "^1.1.422",
-    "@unocss/preset-icons": "^0.4.9",
-    "@unocss/reset": "^0.4.9",
+    "@unocss/nuxt": "^0.4.12",
+    "@unocss/reset": "^0.4.11",
     "@vueuse/core": "^6.7.4",
     "eslint": "^8.1.0",
     "nuxt3": "latest",
     "typescript": "^4.4.4",
-    "unocss": "^0.4.9"
+    "unocss": "^0.4.11"
   }
 }

@@ -1,11 +1,10 @@
 import { defineNuxtConfig } from 'nuxt3'
-import { presetAttributify, presetUno } from 'unocss'
-import presetIcons from '@unocss/preset-icons'
+import { presetAttributify, presetUno, presetIcons } from 'unocss'
 
 export default defineNuxtConfig({
   buildModules: [
     '@vueuse/core/nuxt',
-    '~/modules/uno.ts',
+    '@unocss/nuxt',
   ],
   css: [
     '@unocss/reset/tailwind.css',
