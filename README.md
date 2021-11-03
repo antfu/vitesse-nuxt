@@ -8,6 +8,8 @@
 
 > 🧪 Working in Progress
 
+[Nuxt 2 version](https://github.com/antfu/vitesse-nuxt-bridge)
+
 ## Features
 
 - [💚 Nuxt 3](https://v3.nuxtjs.org)
