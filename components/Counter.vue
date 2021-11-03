@@ -4,12 +4,14 @@ const { count, inc, dec } = useCount()
 
 <template>
   <div m="y-3">
-    <button border="~ rounded gray-400" class="px-2 mx-2 hover:bg-gray-400/20 !outline-none" @click="dec()">
-      dec
+    <button class="btn" @click="dec()">
+      -
     </button>
-    <span font="mono">{{ count }}</span>
-    <button border="~ rounded gray-400" class="px-2 mx-2 hover:bg-gray-400/20 !outline-none" @click="inc()">
-      inc
+    <div font="mono" w="15" inline-block>
+      {{ count }}
+    </div>
+    <button class="btn" @click="inc()">
+      +
     </button>
   </div>
 </template>
