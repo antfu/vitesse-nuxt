@@ -15,5 +15,7 @@ const router = useRouter()
         Back
       </button>
     </div>
+
+    <Counter />
   </div>
 </template>

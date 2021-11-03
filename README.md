@@ -1,14 +1,12 @@
 <p align="center">
-<img src="https://user-images.githubusercontent.com/11247099/109278332-6100e780-7853-11eb-9632-ce0b870017e0.png" width="500"/>
+<img src="https://user-images.githubusercontent.com/11247099/140190314-14c4e434-9608-4f4b-b378-4403b13dcc18.png" width="500"/>
 </p>
-
-<h2 align="center">Vitesse for Nuxt 3</h2>
 
 <p align="center">
 <a href="https://github.com/antfu/vitesse">Vitesse</a> for Nuxt 3
 </p><br>
 
-> 🧪 Experimental
+> 🧪 Working in Progress
 
 ## Features
 
