@@ -8,6 +8,7 @@
       <span text-purple-500>Vitesse</span>
     </h1>
     <InputEntry />
+    <PageView />
     <Footer />
   </div>
 </template>
