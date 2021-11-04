@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const route = useRoute()
-const router = useRouter()
 </script>
 
 <template>
@@ -8,12 +7,12 @@ const router = useRouter()
     <div>Hi: {{ route.params.id }}</div>
 
     <div>
-      <button
+      <NuxtLink
         class="btn m-3 text-sm mt-6"
-        @click="router.back()"
+        to="/"
       >
         Back
-      </button>
+      </NuxtLink>
     </div>
 
     <Counter />
