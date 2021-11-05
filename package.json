@@ -9,7 +9,7 @@
     "@antfu/eslint-config": "^0.10.0",
     "@iconify/json": "^1.1.423",
     "@unocss/nuxt": "^0.5.1",
-    "@vueuse/core": "^6.7.5",
+    "@vueuse/core": "^6.7.6",
     "eslint": "^8.1.0",
     "nuxt3": "latest",
     "typescript": "^4.4.4",

@@ -4,7 +4,7 @@ specifiers:
   '@antfu/eslint-config': ^0.10.0
   '@iconify/json': ^1.1.423
   '@unocss/nuxt': ^0.5.1
-  '@vueuse/core': ^6.7.5
+  '@vueuse/core': ^6.7.6
   eslint: ^8.1.0
   nuxt3: latest
   typescript: ^4.4.4
@@ -14,7 +14,7 @@ devDependencies:
   '@antfu/eslint-config': 0.10.0_eslint@8.1.0+typescript@4.4.4
   '@iconify/json': 1.1.423
   '@unocss/nuxt': 0.5.1
-  '@vueuse/core': 6.7.5
+  '@vueuse/core': 6.7.6
   eslint: 8.1.0
   nuxt3: 3.0.0-27267816.6bd7186
   typescript: 4.4.4
@@ -1306,8 +1306,8 @@ packages:
     resolution: {integrity: sha512-5EQmIPK6gw4UVYUbM959B0uPsJ58+xoMESCZs3N89XyvJ9e+fX4pqEPrOGV8OroIk3SbEvJcC+eYc8BH9JQrHA==}
     dev: true
 
-  /@vueuse/core/6.7.5:
-    resolution: {integrity: sha512-zgWai0i38TbfWGMVs1ybyEEdwwhjjMloQflRTMU0+pTmp3kEtQTDiVZiOrr758s+yRdr2OQiMQ323dyiKgKMFQ==}
+  /@vueuse/core/6.7.6:
+    resolution: {integrity: sha512-oVyqARXnTvhf4m6xf/sHw+SNJWcRYJn8+L4TZTFBU9POf9GIzBN7iHD2Oc4K4rTWXGQzXfoFHgbrXyeMFCRoqA==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
@@ -1317,7 +1317,7 @@ packages:
       vue:
         optional: true
     dependencies:
-      '@vueuse/shared': 6.7.5
+      '@vueuse/shared': 6.7.6
       vue-demi: 0.12.0
     dev: true
 
@@ -1329,8 +1329,8 @@ packages:
       vue: 3.2.21
     dev: true
 
-  /@vueuse/shared/6.7.5:
-    resolution: {integrity: sha512-wUDMPTGUSTYsbiftKq7dYLKD2i3n0m8utbHBCyoxdyeKsmtQGIM2/XeeXjtALB7UXD6rqPsVgCMepNrPPt8zvw==}
+  /@vueuse/shared/6.7.6:
+    resolution: {integrity: sha512-MfzTKkFK63PcjDdTpJRuJqylpyUdXpic9ueTRcgpPizqFpoYIuI6DkdYjub2Ch5+OYYhVnCqe8ynW6WzYo7DGQ==}
     peerDependencies:
       '@vue/composition-api': ^1.1.0
       vue: ^2.6.0 || ^3.2.0
