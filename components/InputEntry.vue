@@ -9,28 +9,30 @@ const go = () => {
 </script>
 
 <template>
-  <input
-    id="input"
-    v-model="name"
-    placeholder="What's your name?"
-    type="text"
-    autocomplete="false"
-    p="x-4 y-2"
-    m="t-5"
-    w="250px"
-    text="center"
-    bg="transparent"
-    border="~ rounded gray-200 dark:gray-700"
-    outline="none active:none"
-    @keydown.enter="go"
-  >
   <div>
-    <button
-      class="m-3 text-sm btn"
-      :disabled="!name"
-      @click="go"
+    <input
+      id="input"
+      v-model="name"
+      placeholder="What's your name?"
+      type="text"
+      autocomplete="false"
+      p="x-4 y-2"
+      m="t-5"
+      w="250px"
+      text="center"
+      bg="transparent"
+      border="~ rounded gray-200 dark:gray-700"
+      outline="none active:none"
+      @keydown.enter="go"
     >
-      GO
-    </button>
+    <div>
+      <button
+        class="m-3 text-sm btn"
+        :disabled="!name"
+        @click="go"
+      >
+        GO
+      </button>
+    </div>
   </div>
 </template>
