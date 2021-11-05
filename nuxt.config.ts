@@ -2,6 +2,9 @@ import { defineNuxtConfig } from 'nuxt3'
 import { presetAttributify, presetUno, presetIcons } from 'unocss'
 
 export default defineNuxtConfig({
+  meta: {
+    title: 'Vitesse Nuxt 3',
+  },
   buildModules: [
     '@vueuse/core/nuxt',
     '@unocss/nuxt',

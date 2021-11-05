@@ -16,6 +16,7 @@ const go = () => {
     type="text"
     autocomplete="false"
     p="x-4 y-2"
+    m="t-5"
     w="250px"
     text="center"
     bg="transparent"

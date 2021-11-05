@@ -3,7 +3,7 @@ const { data } = await useFetch('/api/pageview')
 </script>
 
 <template>
-  <div>
-    Page view: {{ data.pageview }}
+  <div op50>
+    Pageview: {{ data.pageview }}
   </div>
 </template>
