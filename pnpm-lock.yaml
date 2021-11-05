@@ -2,7 +2,8 @@ lockfileVersion: 5.3
 
 specifiers:
   '@antfu/eslint-config': ^0.10.0
-  '@iconify/json': ^1.1.423
+  '@iconify-json/carbon': ^1.0.8
+  '@iconify-json/twemoji': ^1.0.2
   '@unocss/nuxt': ^0.6.1
   '@vueuse/core': ^6.7.6
   eslint: ^8.1.0
@@ -12,7 +13,8 @@ specifiers:
 
 devDependencies:
   '@antfu/eslint-config': 0.10.0_eslint@8.1.0+typescript@4.4.4
-  '@iconify/json': 1.1.423
+  '@iconify-json/carbon': 1.0.8
+  '@iconify-json/twemoji': 1.0.2
   '@unocss/nuxt': 0.6.1
   '@vueuse/core': 6.7.6
   eslint: 8.1.0
@@ -448,8 +450,16 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify/json/1.1.423:
-    resolution: {integrity: sha512-CiL83VD0sUKKeEWha4PadLiJ+HNxN8gJO6MiAy6koIOu7FAI69vtR8BpfxfnuXf1EpKbBDvDaQbHsEYdzwRxJw==}
+  /@iconify-json/carbon/1.0.8:
+    resolution: {integrity: sha512-C1DJbsObX9tLdalhzt5vlmqHWm6IE+58Yu6FSw+frYVuAKcw9VjhQBpJX7WxmJNK3Wy57Y1obUnkLb8xVip3oQ==}
+    dependencies:
+      '@iconify/types': 1.0.10
+    dev: true
+
+  /@iconify-json/twemoji/1.0.2:
+    resolution: {integrity: sha512-kr1WiObcPMU4bJDLVH8x0tk5WaP95QFVsVIdNUMpbzYgx5vBa8lx9LKhOv+D6y+Co+bCAIP9N97ObaRM1fe4Kg==}
+    dependencies:
+      '@iconify/types': 1.0.10
     dev: true
 
   /@iconify/types/1.0.10:

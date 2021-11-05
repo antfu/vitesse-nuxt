@@ -7,7 +7,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.10.0",
-    "@iconify/json": "^1.1.423",
+    "@iconify-json/carbon": "^1.0.8",
+    "@iconify-json/twemoji": "^1.0.2",
     "@unocss/nuxt": "^0.6.1",
     "@vueuse/core": "^6.7.6",
     "eslint": "^8.1.0",
