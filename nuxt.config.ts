@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   buildModules: [
     '@vueuse/core/nuxt',
     '@unocss/nuxt',
+    '@pinia/nuxt',
   ],
   unocss: {
     shortcuts: [
