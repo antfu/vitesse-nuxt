@@ -10,15 +10,14 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.10.0",
-    "@iconify-json/carbon": "^1.0.9",
+    "@iconify-json/carbon": "^1.0.10",
     "@iconify-json/twemoji": "^1.0.2",
     "@pinia/nuxt": "^0.1.5",
-    "@unocss/nuxt": "^0.7.7",
-    "@vueuse/core": "^6.8.0",
+    "@unocss/nuxt": "^0.9.3",
+    "@vueuse/core": "^6.9.0",
     "eslint": "^8.2.0",
     "nuxt3": "latest",
-    "typescript": "^4.4.4",
-    "unocss": "^0.7.7"
+    "typescript": "^4.4.4"
   },
   "pnpm": {
     "overrides": {
