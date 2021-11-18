@@ -1,9 +1,7 @@
 import { defineNuxtConfig } from 'nuxt3'
 
 export default defineNuxtConfig({
-  meta: {
-    title: 'Vitesse Nuxt 3',
-  },
+  title: 'Vitesse Nuxt 3',
   buildModules: [
     '@vueuse/core/nuxt',
     '@unocss/nuxt',
@@ -18,5 +16,8 @@ export default defineNuxtConfig({
     icons: {
       scale: 1.2,
     },
+  },
+  vite: {
+    logLevel: 'info',
   },
 })
