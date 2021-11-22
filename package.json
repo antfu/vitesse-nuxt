@@ -6,23 +6,23 @@
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
-    "pinia": "^2.0.3"
+    "pinia": "^2.0.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.10.0",
-    "@iconify-json/carbon": "^1.0.10",
+    "@iconify-json/carbon": "^1.0.11",
     "@iconify-json/twemoji": "^1.0.2",
     "@pinia/nuxt": "^0.1.5",
-    "@unocss/nuxt": "^0.10.0",
-    "@vueuse/core": "^6.9.1",
-    "eslint": "^8.2.0",
-    "nuxt3": "latest",
-    "typescript": "^4.4.4"
+    "@unocss/nuxt": "^0.11.5",
+    "@vueuse/core": "^7.0.0",
+    "eslint": "^8.3.0",
+    "nuxt3": "3.0.0-27291847.07c7a20",
+    "typescript": "^4.5.2"
   },
   "pnpm": {
     "overrides": {
-      "@nuxt/kit": "npm:@nuxt/kit-edge@latest",
-      "@nuxt/kit-edge": "latest"
+      "@nuxt/kit": "npm:@nuxt/kit-edge@3.0.0-27291847.07c7a20",
+      "@nuxt/kit-edge": "3.0.0-27291847.07c7a20"
     }
   }
 }
