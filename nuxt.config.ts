@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     ],
     uno: true,
     attributify: true,
+    preflight: true,
     icons: {
       scale: 1.2,
     },
