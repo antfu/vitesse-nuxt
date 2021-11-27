@@ -9,12 +9,12 @@
     "pinia": "^2.0.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.10.0",
+    "@antfu/eslint-config": "^0.11.1",
     "@iconify-json/carbon": "^1.0.11",
     "@iconify-json/twemoji": "^1.0.2",
     "@pinia/nuxt": "^0.1.5",
-    "@unocss/nuxt": "^0.11.5",
-    "@vueuse/core": "^7.0.0",
+    "@unocss/nuxt": "^0.12.12",
+    "@vueuse/core": "^7.1.2",
     "eslint": "^8.3.0",
     "nuxt3": "latest",
     "typescript": "^4.5.2"
