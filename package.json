@@ -6,16 +6,16 @@
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
-    "pinia": "^2.0.5"
+    "pinia": "^2.0.6"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.11.1",
+    "@antfu/eslint-config": "^0.12.2",
     "@iconify-json/carbon": "^1.0.12",
     "@iconify-json/twemoji": "^1.0.2",
     "@pinia/nuxt": "^0.1.6",
-    "@unocss/nuxt": "^0.15.0",
-    "@vueuse/core": "^7.1.2",
-    "eslint": "^8.3.0",
+    "@unocss/nuxt": "^0.15.6",
+    "@vueuse/nuxt": "^7.2.2",
+    "eslint": "^8.4.1",
     "nuxt3": "latest",
     "typescript": "^4.5.2"
   },
