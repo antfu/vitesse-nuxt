@@ -3,21 +3,22 @@
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint ."
   },
   "dependencies": {
     "pinia": "^2.0.11"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.16.1",
+    "@antfu/eslint-config": "^0.18.6",
     "@iconify-json/carbon": "^1.1.1",
-    "@iconify-json/twemoji": "^1.1.0",
+    "@iconify-json/twemoji": "^1.1.1",
     "@pinia/nuxt": "^0.1.8",
-    "@unocss/nuxt": "^0.26.2",
-    "@vueuse/nuxt": "^7.6.2",
-    "eslint": "^8.9.0",
+    "@unocss/nuxt": "^0.27.5",
+    "@vueuse/nuxt": "^7.7.1",
+    "eslint": "^8.10.0",
     "nuxt3": "latest",
-    "typescript": "^4.5.5"
+    "typescript": "^4.6.2"
   },
   "pnpm": {
     "overrides": {
