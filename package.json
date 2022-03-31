@@ -10,14 +10,14 @@
     "pinia": "^2.0.12"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.18.9",
+    "@antfu/eslint-config": "^0.19.1",
     "@iconify-json/carbon": "^1.1.2",
     "@iconify-json/twemoji": "^1.1.2",
     "@pinia/nuxt": "^0.1.8",
-    "@unocss/nuxt": "^0.30.6",
-    "@vueuse/nuxt": "^8.2.0",
+    "@unocss/nuxt": "^0.30.8",
+    "@vueuse/nuxt": "^8.2.3",
     "eslint": "^8.12.0",
-    "nuxt3": "latest",
+    "nuxt3": "^3.0.0-27478897.169aa35",
     "typescript": "^4.6.3"
   },
   "pnpm": {
