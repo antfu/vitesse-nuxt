@@ -7,17 +7,17 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "pinia": "^2.0.12"
+    "pinia": "^2.0.13"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.19.1",
-    "@iconify-json/carbon": "^1.1.2",
-    "@iconify-json/twemoji": "^1.1.2",
+    "@antfu/eslint-config": "^0.20.2",
+    "@iconify-json/carbon": "^1.1.3",
+    "@iconify-json/twemoji": "^1.1.3",
     "@pinia/nuxt": "^0.1.8",
-    "@unocss/nuxt": "^0.30.8",
-    "@vueuse/nuxt": "^8.2.3",
+    "@unocss/nuxt": "^0.30.12",
+    "@vueuse/nuxt": "^8.2.5",
     "eslint": "^8.12.0",
-    "nuxt3": "^3.0.0-27478938.fdd6a91",
+    "nuxt3": "^3.0.0-27489614.315e5b5",
     "typescript": "^4.6.3"
   },
   "pnpm": {
