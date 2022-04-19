@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useUserStore } from '~/stores/user'
-
 const route = useRoute()
 const user = useUserStore()
 const name = route.params.id
