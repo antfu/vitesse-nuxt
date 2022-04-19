@@ -31,6 +31,8 @@
 
 - 🍍 [State Management via Pinia](https://pinia.esm.dev/)
 
+- 📑 [Layout system](./src/layouts)
+
 - 📥 APIs auto importing - for Composition API, VueUse and custom composables.
 
 - 🏎 Zero-config cloud functions and deploy
