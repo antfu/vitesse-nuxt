@@ -11,3 +11,5 @@ definePageMeta({
 })
 </script>
 ```
+
+Learn more on https://v3.nuxtjs.org/guide/directory-structure/layouts

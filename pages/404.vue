@@ -7,12 +7,11 @@ const router = useRouter()
     <div text-4xl>
       <div i-carbon-warning inline-block />
     </div>
-    <slot />
+    <div>Not found</div>
     <div>
       <button btn text-sm m="3 t8" @click="router.back()">
         Back
       </button>
     </div>
-    <Footer />
   </main>
 </template>
