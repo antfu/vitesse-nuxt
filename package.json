@@ -15,16 +15,10 @@
     "@iconify-json/twemoji": "^1.1.3",
     "@nuxtjs/color-mode": "^3.0.2",
     "@pinia/nuxt": "^0.1.8",
-    "@unocss/nuxt": "^0.31.5",
+    "@unocss/nuxt": "^0.31.6",
     "@vueuse/nuxt": "^8.2.6",
     "eslint": "^8.13.0",
-    "nuxt3": "^3.0.0-27501460.04a72f8",
+    "nuxt": "^3.0.0-rc.0",
     "typescript": "^4.6.3"
-  },
-  "pnpm": {
-    "overrides": {
-      "@nuxt/kit": "npm:@nuxt/kit-edge@latest",
-      "@nuxt/kit-edge": "latest"
-    }
   }
 }
