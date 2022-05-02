@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "antfu.iconify",
+    "antfu.unocss",
+    "csstools.postcss",
+    "dbaeumer.vscode-eslint",
+    "vue.volar"
+  ]
+}
