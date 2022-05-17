@@ -1,4 +1,4 @@
-<script setup lang='ts'>
+<script setup lang="ts">
 const { count, inc, dec } = useCount()
 </script>
 
