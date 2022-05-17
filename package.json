@@ -11,7 +11,8 @@
     "eslint": "eslint .",
     "eslint:fix": "eslint . --fix",
     "stylelint": "stylelint \"**/*.{css,scss,vue,tsx}\"",
-    "stylelint:fix": "stylelint \"**/*.{css,scss,vue,tsx}\" --fix"
+    "stylelint:fix": "stylelint \"**/*.{css,scss,vue,tsx}\" --fix",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@iconify-json/carbon": "^1.1.4",
@@ -27,6 +28,8 @@
     "@unocss/nuxt": "^0.33.2",
     "@vueuse/nuxt": "^8.4.2",
     "eslint": "^8.15.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
     "nuxt": "^3.0.0-rc.3",
     "nuxt-typed-router": "^1.1.2",
     "postcss": "^8.4.13",
