@@ -9,7 +9,9 @@ export default defineNuxtConfig({
   ],
   experimental: {
     reactivityTransform: true,
-    viteNode: true,
+    // Disabled for now, see:
+    // https://github.com/antfu/vitesse-nuxt3/issues/42#issuecomment-1126377430
+    // viteNode: true,
   },
   unocss: {
     preflight: true,
