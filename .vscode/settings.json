@@ -1,4 +1,21 @@
 {
+  "cSpell.words": [
+    "Nuxt",
+    "Vitesse",
+    "Vite",
+    "unocss",
+    "vitest",
+    "vueuse",
+    "pinia",
+    "demi",
+    "antfu",
+    "iconify",
+    "intlify",
+    "vitejs",
+    "unplugin",
+    "pnpm",
+    "stylelintrc"
+  ],
   "prettier.enable": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true

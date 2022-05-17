@@ -1,10 +1,18 @@
 {
   "recommendations": [
     "antfu.iconify",
-    "antfu.unocss",
     "antfu.goto-alias",
+    "antfu.unocss",
+    "antfu.vite",
+    "misterj.vue-volar-extention-pack",
+    "christian-kohler.npm-intellisense",
     "csstools.postcss",
+    "davidanson.vscode-markdownlint",
     "dbaeumer.vscode-eslint",
-    "vue.volar"
+    "editorconfig.editorconfig",
+    "ibm.output-colorizer",
+    "oderwat.indent-rainbow",
+    "shardulm94.trailing-spaces",
+    "streetsidesoftware.code-spell-checker"
   ]
 }
