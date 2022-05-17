@@ -7,7 +7,7 @@ const { count, inc, dec } = useCount()
     <button btn p-2 rounded-full @click="dec()">
       <div i-carbon-subtract />
     </button>
-    <div font="mono" w="15" m-auto inline-block>
+    <div id="count" font="mono" w="15" m-auto inline-block>
       {{ count }}
     </div>
     <button btn p-2 rounded-full @click="inc()">
@@ -15,3 +15,9 @@ const { count, inc, dec } = useCount()
     </button>
   </div>
 </template>
+
+<style lang="scss">
+#count {
+  color: red;
+}
+</style>

@@ -36,6 +36,7 @@
     "postcss-html": "^1.4.1",
     "postcss-syntax": "^0.36.2",
     "prettier": "^2.6.2",
+    "sass": "^1.51.0",
     "stylelint": "^14.8.2",
     "stylelint-config-property-sort-order-smacss": "^9.0.0",
     "stylelint-config-recommended-scss": "^6.0.0",

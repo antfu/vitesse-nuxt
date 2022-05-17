@@ -32,15 +32,15 @@ module.exports = {
   },
   overrides: [
     {
-      files: '*.css',
+      files: '**/*.css',
       extends: ['stylelint-config-recommended', ...commonExtends],
     },
     {
-      files: '*.scss',
+      files: '**/*.scss',
       extends: ['stylelint-config-recommended-scss', ...commonExtends],
     },
     {
-      files: '*.vue',
+      files: '**/*.vue',
       extends: ['stylelint-config-recommended-vue/scss', ...commonExtends],
       rules: {
         // For importing '.module.{css|scss}'
@@ -48,7 +48,7 @@ module.exports = {
       },
     },
     {
-      files: '*.tsx',
+      files: '**/*.tsx',
       customSyntax: '@stylelint/postcss-css-in-js',
       extends: ['stylelint-config-recommended-scss', ...commonExtends],
     },
