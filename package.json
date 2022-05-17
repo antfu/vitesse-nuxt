@@ -6,8 +6,12 @@
     "build": "nuxi build",
     "dev": "nuxi dev",
     "start": "node .output/server/index.mjs",
+    "lint": "npm run eslint && npm run stylelint",
+    "lint:fix": "npm run eslint:fix && npm run stylelint:fix",
     "eslint": "eslint .",
-    "eslint:fix": "eslint . --fix"
+    "eslint:fix": "eslint . --fix",
+    "stylelint": "stylelint *.{css,scss,vue,tsx}",
+    "stylelint:fix": "stylelint *.{css,scss,vue,tsx} --fix"
   },
   "dependencies": {
     "vue": "^3.2.33"
@@ -18,12 +22,20 @@
     "@iconify-json/twemoji": "^1.1.4",
     "@nuxtjs/color-mode": "^3.0.3",
     "@pinia/nuxt": "^0.1.9",
+    "@stylelint/postcss-css-in-js": "^0.38.0",
     "@unocss/nuxt": "^0.33.2",
     "@vueuse/nuxt": "^8.4.2",
     "eslint": "^8.15.0",
     "nuxt": "^3.0.0-rc.3",
     "pinia": "^2.0.14",
+    "postcss": "^8.4.13",
+    "postcss-html": "^1.4.1",
+    "postcss-syntax": "^0.36.2",
     "prettier": "^2.6.2",
+    "stylelint": "^14.8.2",
+    "stylelint-config-property-sort-order-smacss": "^9.0.0",
+    "stylelint-config-recommended-scss": "^6.0.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
     "typescript": "^4.6.4",
     "vite": "^2.9.9"
   }
