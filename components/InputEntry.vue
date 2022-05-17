@@ -1,10 +1,15 @@
 <script setup lang="ts">
+import { useTypedRouter } from '~~/generated'
+
+const { router, routes } = useTypedRouter()
 const name = ref('')
 
-const router = useRouter()
 const go = (): void => {
   if (name.value) {
-    void router.push(`/hi/${encodeURIComponent(name.value as string)}`)
+    void router.push({
+      name: routes.hiId,
+      params: { id: encodeURIComponent(name.value) },
+    })
   }
 }
 </script>

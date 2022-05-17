@@ -16,8 +16,8 @@
   "dependencies": {
     "@iconify-json/carbon": "^1.1.4",
     "@iconify-json/twemoji": "^1.1.4",
-    "vue": "^3.2.33",
-    "pinia": "^2.0.14"
+    "pinia": "^2.0.14",
+    "vue": "^3.2.33"
   },
   "devDependencies": {
     "@daotl/eslint-config-vue": "^0.3.23",
@@ -28,6 +28,7 @@
     "@vueuse/nuxt": "^8.4.2",
     "eslint": "^8.15.0",
     "nuxt": "^3.0.0-rc.3",
+    "nuxt-typed-router": "^1.1.2",
     "postcss": "^8.4.13",
     "postcss-html": "^1.4.1",
     "postcss-syntax": "^0.36.2",
