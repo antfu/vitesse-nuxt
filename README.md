@@ -25,6 +25,8 @@
 
 - 🎨 [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
 
+- 📦 [Element Plus](https://element-plus.org/) - Vue 3 UI component library.
+
 - 😃 Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
 
 - 🔥 The `<script setup>` syntax

@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import 'element-plus/theme-chalk/src/button.scss'
+
+import { ElButton } from 'element-plus'
+
 const router = useRouter()
 </script>
 
@@ -9,7 +13,7 @@ const router = useRouter()
     </div>
     <div>Not found</div>
     <div>
-      <button btn text-sm m="3 t8" @click="router.back()">Back</button>
+      <el-button text-sm m="3 t8" @click="router.back()">Back</el-button>
     </div>
   </main>
 </template>

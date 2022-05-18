@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ElConfigProvider } from 'element-plus'
+
 useHead({
   title: 'Vitesse Nuxt 3',
   link: [
@@ -12,9 +14,11 @@ useHead({
 </script>
 
 <template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  <el-config-provider>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </el-config-provider>
 </template>
 
 <style>
