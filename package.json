@@ -1,7 +1,10 @@
 {
+  "name": "@daotl/nuxt-starter",
+  "version": "3.0.0",
+  "description": "A Nuxt 3 + TypeScript starter template",
+  "homepage": "https://github.com/daotl/fes-starter",
   "private": true,
   "packageManager": "pnpm@7.0.1",
-  "prettier": "@daotl/prettier-config",
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
@@ -13,6 +16,14 @@
     "stylelint": "stylelint \"**/*.{css,scss,vue,tsx}\"",
     "stylelint:fix": "stylelint \"**/*.{css,scss,vue,tsx}\" --fix",
     "prepare": "husky install"
+  },
+  "prettier": "@daotl/prettier-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daotl/nuxt-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daotl/fes-starter/issues"
   },
   "dependencies": {
     "@iconify-json/carbon": "^1.1.4",
