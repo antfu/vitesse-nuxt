@@ -2,3 +2,5 @@ dist
 node_modules
 .output
 .nuxt
+plugins
+generated
