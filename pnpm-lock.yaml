@@ -14,6 +14,7 @@ specifiers:
   husky: ^8.0.1
   lint-staged: ^12.4.1
   nuxt: ^3.0.0-rc.3
+  nuxt-lodash: ^2.2.0
   nuxt-typed-router: ^1.1.2
   pinia: ^2.0.14
   postcss: ^8.4.13
@@ -48,6 +49,7 @@ devDependencies:
   husky: 8.0.1
   lint-staged: 12.4.1
   nuxt: 3.0.0-rc.3_sass@1.51.0+vite@2.9.9
+  nuxt-lodash: 2.2.0_vite@2.9.9
   nuxt-typed-router: 1.1.2_vite@2.9.9
   postcss: 8.4.13
   postcss-html: 1.4.1
@@ -5579,6 +5581,20 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /nuxt-lodash/2.2.0_vite@2.9.9:
+    resolution: {integrity: sha512-pOz5SrBUIXfaE31BWrqeUox+ErOAWUvmR4i9wlUail7XO4TkKjP7kWLbtY+3R7RWQAAq4F4K22ySQuWQPhkIFA==}
+    dependencies:
+      '@nuxt/kit': 3.0.0-rc.3_vite@2.9.9
+      '@types/lodash-es': 4.17.6
+      lodash-es: 4.17.21
+    transitivePeerDependencies:
+      - esbuild
+      - rollup
+      - supports-color
+      - vite
+      - webpack
     dev: true
 
   /nuxt-typed-router/1.1.2_vite@2.9.9:
