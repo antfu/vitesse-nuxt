@@ -1,0 +1,6 @@
+query Country {
+  country( code: "CN") {
+    name
+    code
+  }
+}

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data } = await useFetch('/api/pageview')
+const { data } = await useFetch('/api/pageview' as const)
 
 const time = useTimeAgo(computed(() => data.value.startAt))
 </script>

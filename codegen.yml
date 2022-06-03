@@ -1,0 +1,15 @@
+schema:
+  - http://localhost:3000/api/graphql
+  - https://countries.trevorblades.com/
+documents: graphql/**/*.graphql
+generates:
+  generated/graphql/schema.d.ts:
+    plugins:
+      - typescript
+  generated/graphql/operations.ts:
+    config:
+      documentMode: documentNode
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-vue-apollo

@@ -1,14 +1,22 @@
 {
   "name": "@daotl/nuxt-starter",
   "version": "3.0.0",
-  "description": "A Nuxt 3 + TypeScript starter template",
-  "homepage": "https://github.com/daotl/fes-starter",
   "private": true,
   "packageManager": "pnpm@7.0.1",
+  "description": "A Nuxt 3 + TypeScript starter template",
+  "homepage": "https://github.com/daotl/fes-starter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daotl/nuxt-starter.git"
+  },
   "scripts": {
     "build": "nuxi build",
+    "build:lambda": "cross-env NITRO_PRESET=lambda nuxi build",
     "dev": "nuxi dev",
+    "graphql-codegen": "graphql-codegen",
     "start": "node .output/server/index.mjs",
+    "serverless:deploy": "serverless deploy",
+    "serverless:domain": "serverless create_domain",
     "lint": "npm run eslint && npm run stylelint",
     "lint:fix": "npm run eslint:fix && npm run stylelint:fix",
     "eslint": "eslint .",
@@ -18,21 +26,29 @@
     "prepare": "husky install"
   },
   "prettier": "@daotl/prettier-config",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/daotl/nuxt-starter.git"
-  },
   "bugs": {
     "url": "https://github.com/daotl/fes-starter/issues"
   },
   "dependencies": {
     "@iconify-json/carbon": "^1.1.5",
     "@iconify-json/twemoji": "^1.1.4",
+    "apollo-server-core": "^3.8.1",
+    "class-validator": "^0.13.2",
+    "graphql": "^15.8.0",
+    "graphql-playground-html": "^1.6.30",
+    "graphql-tag": "^2.12.6",
     "pinia": "^2.0.14",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1",
     "vue": "^3.2.34"
   },
   "devDependencies": {
     "@daotl/eslint-config-vue": "^0.3.25",
+    "@graphql-codegen/cli": "^2.6.2",
+    "@graphql-codegen/typescript-operations": "^2.4.0",
+    "@graphql-codegen/typescript-vue-apollo": "^3.2.12",
+    "@intlify/nuxt3": "^0.2.2",
+    "@nuxt3/apollo-module": "^0.0.9",
     "@nuxtjs/color-mode": "^3.0.3",
     "@pinia/nuxt": "^0.1.9",
     "@stylelint/postcss-css-in-js": "^0.38.0",
@@ -57,5 +73,11 @@
     "typescript": "^4.6.4",
     "unplugin-auto-import": "^0.7.2",
     "vite": "^2.9.9"
+  },
+  "pnpm": {
+    "overrides": {
+      "nuxt3": "npm:nuxt@^3.0.0-rc.3",
+      "jiti": "npm:@daotl/jiti@^1.13.1"
+    }
   }
 }

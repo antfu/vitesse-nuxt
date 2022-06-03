@@ -11,6 +11,9 @@ useHead({
     },
   ],
 })
+
+const { setPreferredLanguage } = useLocal()
+setPreferredLanguage()
 </script>
 
 <template>
@@ -21,7 +24,7 @@ useHead({
   </el-config-provider>
 </template>
 
-<style>
+<style lang="scss">
 html,
 body,
 #__nuxt {

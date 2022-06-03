@@ -5,3 +5,6 @@ dist
 .nuxt
 .env
 .eslintcache
+.history
+.serverless
+.idea

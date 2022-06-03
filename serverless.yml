@@ -1,0 +1,31 @@
+service: nuxt3-ssr
+
+# custom:
+#   customDomain:
+#     http:
+#       domainName: ssr-sls.youbefashion.com
+#       endpointType: regional
+#       certificateName: youbefashion.com
+#       createRoute53Record: true
+# plugins:
+#   - serverless-domain-manager
+
+provider:
+  name: aws
+  lambdaHashingVersion: 20201221
+
+package:
+  individually: true
+
+functions:
+  ssr:
+    handler: .output/server/index.handler
+    runtime: nodejs14.x
+    memorySize: 256
+    package:
+      exclude:
+        - ./**
+      include:
+        - ./.output/server/**
+    events:
+      - httpApi: '*'

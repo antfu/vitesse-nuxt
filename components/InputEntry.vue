@@ -19,7 +19,7 @@ const go = (): void => {
     <input
       id="input"
       v-model="name"
-      placeholder="What's your name?"
+      :placeholder="$t('input-name')"
       type="text"
       autocomplete="off"
       p="x-4 y-2"
@@ -32,7 +32,9 @@ const go = (): void => {
       @keydown.enter="go"
     />
     <div>
-      <button m-3 text-sm btn :disabled="!name" @click="go">GO</button>
+      <button m-3 text-sm btn :disabled="!name" @click="go">
+        {{ $t('go') }}
+      </button>
     </div>
   </div>
 </template>
