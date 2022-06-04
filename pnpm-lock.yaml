@@ -7,6 +7,7 @@ specifiers:
   '@daotl/eslint-config-vue': ^0.3.25
   '@graphql-codegen/cli': ^2.6.2
   '@graphql-codegen/near-operation-file-preset': ^2.2.12
+  '@graphql-codegen/typed-document-node': ^2.2.11
   '@graphql-codegen/typescript-operations': ^2.4.0
   '@graphql-codegen/typescript-vue-apollo': ^3.2.12
   '@graphql-codegen/typescript-vue-urql': ^2.2.12
@@ -66,6 +67,7 @@ devDependencies:
   '@daotl/eslint-config-vue': 0.3.25_swzprww56tbt6xqyypkb3snuza
   '@graphql-codegen/cli': 2.6.2_i5nkydmxvw2aqmtu5wzyfb3l3i
   '@graphql-codegen/near-operation-file-preset': 2.2.12_graphql@15.8.0
+  '@graphql-codegen/typed-document-node': 2.2.11_graphql@15.8.0
   '@graphql-codegen/typescript-operations': 2.4.0_graphql@15.8.0
   '@graphql-codegen/typescript-vue-apollo': 3.2.12_3jt5ibhtazvod5hvf7xqhzsx4q
   '@graphql-codegen/typescript-vue-urql': 2.2.12_3jt5ibhtazvod5hvf7xqhzsx4q
@@ -1321,6 +1323,22 @@ packages:
       '@graphql-tools/utils': 8.6.12_graphql@15.8.0
       graphql: 15.8.0
       tslib: 2.3.1
+    dev: true
+
+  /@graphql-codegen/typed-document-node/2.2.11_graphql@15.8.0:
+    resolution: {integrity: sha512-AHBfw6gHSs0XOuIWsLZwtSgmk+3XqUCyPfXCeDE3Z9MNx/EYYY6lr8cFcsFnR3ASotcVAsVoLTfB4YS4NqgqdA==}
+    peerDependencies:
+      graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
+    dependencies:
+      '@graphql-codegen/plugin-helpers': 2.4.2_graphql@15.8.0
+      '@graphql-codegen/visitor-plugin-common': 2.8.0_graphql@15.8.0
+      auto-bind: 4.0.0
+      change-case-all: 1.0.14
+      graphql: 15.8.0
+      tslib: 2.4.0
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
     dev: true
 
   /@graphql-codegen/typescript-operations/2.4.0_graphql@15.8.0:

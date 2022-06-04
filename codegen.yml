@@ -19,8 +19,10 @@ generates:
       folder: generated
     plugins:
       - typescript-operations
-      # - typed-document-node
-      - typescript-vue-urql
+      - typed-document-node
+      - typescript-vue-urql:
+          # Disable for we're using `typed-document-node` generated the typed DocumentNode
+          documentMode: external
       # For Graphcache
       # - typescript-urql-graphcache
   # For Graphcache

@@ -47,6 +47,7 @@
     "@daotl/eslint-config-vue": "^0.3.25",
     "@graphql-codegen/cli": "^2.6.2",
     "@graphql-codegen/near-operation-file-preset": "^2.2.12",
+    "@graphql-codegen/typed-document-node": "^2.2.11",
     "@graphql-codegen/typescript-operations": "^2.4.0",
     "@graphql-codegen/typescript-vue-apollo": "^3.2.12",
     "@graphql-codegen/typescript-vue-urql": "^2.2.12",
