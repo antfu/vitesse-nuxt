@@ -1,15 +1,29 @@
-schema:
-  - http://localhost:3000/api/graphql
-  - https://countries.trevorblades.com/
+schema: http://localhost:3000/api/graphql
 documents: graphql/**/*.graphql
+# hooks:
+#  afterOneFileWrite:
+#    - eslint --fix
+config:
+  defaultScalarType: never
+  useTypeImports: true
+# Reference: https://github.com/bicouy0/nuxt3-urql/blob/0f9040955a42cdd6916f48665cdb475037b6b4e7/codegen.yml
 generates:
-  generated/graphql/schema.d.ts:
+  graphql/generated/types.ts:
     plugins:
       - typescript
-  generated/graphql/operations.ts:
-    config:
-      documentMode: documentNode
+  graphql/generated/:
+    preset: near-operation-file
+    presetConfig:
+      baseTypesPath: types.d.ts
+      extension: .ts
+      folder: generated
     plugins:
-      - typescript
       - typescript-operations
-      - typescript-vue-apollo
+      # - typed-document-node
+      - typescript-vue-urql
+      # For Graphcache
+      # - typescript-urql-graphcache
+  # For Graphcache
+  # graphql/generated/introspection.ts:
+  #   plugins:
+  #     - urql-introspection

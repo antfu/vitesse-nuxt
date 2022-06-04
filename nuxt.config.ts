@@ -11,29 +11,13 @@ const lifecycle = process.env.npm_lifecycle_event
 export default defineNuxtConfig({
   buildModules: [
     '@intlify/nuxt3',
-    // '@nuxt3/graphql-codegen-module',
-    '@nuxt3/apollo-module',
+    //  'nuxt-graphql-codegen'
   ],
   // https://github.com/intlify/nuxt3#-configurations
   intlify: {
     vueI18n: {
       locale: 'zh',
       messages: locales,
-    },
-  },
-  // https://github.com/newbeea/nuxt3-graphql-codegen-module#configuration
-  // Not working for now, generate manually with `npx graphql-codegen` for now
-  // graphqlCodegen: {
-  //   schema: ['http://localhost:3000/api/graphql', 'https://countries.trevorblades.com/'],
-  // },
-  // https://github.com/newbeea/nuxt3-apollo-module#configuration
-  apollo: {
-    default: {
-      // Local GraphQL server, set BASE_URL env when building if using serverless or deploying on an unknown port
-      uri: `${process.env.BASE_URL || 'http://localhost:3000'}/api/graphql`,
-    },
-    trevorblades: {
-      uri: 'https://countries.trevorblades.com/',
     },
   },
   modules: [
