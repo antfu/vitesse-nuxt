@@ -2,7 +2,7 @@
   "name": "@daotl/nuxt-starter",
   "version": "3.0.0",
   "private": true,
-  "packageManager": "pnpm@7.0.1",
+  "packageManager": "pnpm@7.1.7",
   "description": "A Nuxt 3 + TypeScript starter template",
   "homepage": "https://github.com/daotl/fes-starter",
   "repository": {
