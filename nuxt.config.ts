@@ -14,10 +14,14 @@ const autoImportOpts = {
     // custom
     {},
   ],
+  // dirs: ['generated/typed-router'],
   dts: './generated/auto-imports.d.ts',
 }
 
 export default defineNuxtConfig({
+  autoImports: {
+    dirs: ['generated/typed-router'],
+  },
   modules: [
     // https://github.com/antfu/unplugin-auto-import
     ['unplugin-auto-import/nuxt', autoImportOpts],

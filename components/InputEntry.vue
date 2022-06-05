@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useTypedRouter } from '~~/generated'
+// import { useTypedRouter } from '~/generated/typed-router'
 
 const { router, routes } = useTypedRouter()
 const name = ref('')
@@ -8,7 +8,7 @@ const go = (): void => {
   if (name.value) {
     void router.push({
       name: routes.hiId,
-      params: { id: encodeURIComponent(name.value) },
+      params: { id: encodeURIComponent(name.value as string) },
     })
   }
 }
