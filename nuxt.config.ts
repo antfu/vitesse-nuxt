@@ -1,4 +1,4 @@
-/* eslint-disable import/no-unresolved */
+/* eslint-disable import/no-unresolved,@typescript-eslint/explicit-function-return-type */
 
 import { defineNuxtConfig } from 'nuxt'
 
@@ -36,8 +36,10 @@ export default defineNuxtConfig({
   ],
   build: {
     // https://github.com/element-plus/element-plus-nuxt-starter/blob/44644788ee0d2a2580769769f9885b5cd9f7c0ab/nuxt.config.ts#L27
-    transpile:
-      lifecycle === 'build' || lifecycle === 'generate' ? ['element-plus'] : [],
+    transpile: [
+      () =>
+        (lifecycle === 'build' || lifecycle === 'generate') && 'element-plus',
+    ],
   },
   experimental: {
     reactivityTransform: true,
@@ -68,7 +70,7 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
-  // https://github.com/intlify/nuxt3#-configurations
+  // https://github.com/intlify/nuxt3
   intlify: {
     vueI18n: {
       locale: 'zh-CN',
