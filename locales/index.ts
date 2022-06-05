@@ -1,7 +1,7 @@
-import en from './en.json'
-import cn from './zh-CN.json'
+import en from './en'
+import zhCn from './zh-CN'
 
 export default {
   en,
-  cn,
+  'zh-CN': zhCn,
 }

@@ -15,7 +15,7 @@ const { setLocale, locale } = useLocal()
       target="_blank"
     />
     <DarkToggle />
-    <el-button @click="setLocale(locale === 'en' ? 'zh-CN' : 'en')">
+    <el-button @click="setLocale(locale === 'en' ? 'zhCn' : 'en')">
       en / zh-CN
     </el-button>
   </div>

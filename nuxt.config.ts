@@ -1,32 +1,34 @@
 /* eslint-disable import/no-unresolved */
 
 import { defineNuxtConfig } from 'nuxt'
-import TypedRouter from 'nuxt-typed-router'
-import AutoImport from 'unplugin-auto-import/vite'
 
 import locales from './locales'
 
 const lifecycle = process.env.npm_lifecycle_event
 
-export default defineNuxtConfig({
-  buildModules: [
-    '@intlify/nuxt3',
-    //  'nuxt-graphql-codegen'
+const autoImportOpts = {
+  // global imports to register
+  imports: [
+    // presets
+    'pinia',
+    // custom
+    {},
   ],
-  // https://github.com/intlify/nuxt3#-configurations
-  intlify: {
-    vueI18n: {
-      locale: 'zh',
-      messages: locales,
-    },
-  },
+  dts: './generated/auto-imports.d.ts',
+}
+
+export default defineNuxtConfig({
   modules: [
-    TypedRouter,
+    // https://github.com/antfu/unplugin-auto-import
+    ['unplugin-auto-import/nuxt', autoImportOpts],
+    'nuxt-typed-router',
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     'nuxt-lodash',
+    '@intlify/nuxt3',
+    //  'nuxt-graphql-codegen'
   ],
   build: {
     // https://github.com/element-plus/element-plus-nuxt-starter/blob/44644788ee0d2a2580769769f9885b5cd9f7c0ab/nuxt.config.ts#L27
@@ -46,7 +48,7 @@ export default defineNuxtConfig({
   // https://github.com/victorgarciaesgi/nuxt-typed-router
   nuxtTypedRouter: {
     // Output directory where you cant the files to be saved
-    // outDir: './generated',
+    outDir: './generated/typed-router',
     // Name of the routesNames object
     // routesObjectName: 'routerPagesNames',
   },
@@ -62,13 +64,14 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
-  vite: {
-    plugins: [
-      // https://github.com/antfu/unplugin-auto-import
-      AutoImport({
-        imports: ['pinia'],
-        dts: 'types/auto-imports.d.ts',
-      }),
-    ],
+  // https://github.com/intlify/nuxt3#-configurations
+  intlify: {
+    vueI18n: {
+      locale: 'zh-CN',
+      messages: locales,
+    },
   },
+  // vite: {
+  //   plugins: [],
+  // },
 })

@@ -118,15 +118,6 @@ Graphql Playground: http://localhost:3000/api/playground
 
 #### Normal server
 
-#### Setup URL environment variable (if you want to use graphql server in server/api/graphql)
-
-setup URL environment when build
-for example:
-add in package.json
-```
-"build": "cross-env URL=https://xxx.yourdomain.com nuxi build"
-```
-
 build
 ```
 npm run build
@@ -139,30 +130,21 @@ npm run start
 
 #### Serverless(aws lambda) mode
 
-##### Setup cdn 
+##### Setup CDN
 
 set cdnURL in nuxt.config.ts
-
-#### Setup URL environment variable (if you want to use graphql server in server/api/graphql)
-
-setup URL environment when build
-for example:
-add in package.json
-```
-"build:sls": "cross-env NITRO_PRESET=lambda URL=https://xxx.yourdomain.com nuxi build"
-```
 
 ##### build with lambda preset
 
 ```
-yarn run build:sls
+npm run build:lambda
 ```
 
 ##### upload static files
 
 upload .output/server/public/* to cdn (cdnURL)
 
-##### custom domain (optional) 
+##### custom domain (optional)
 
 config customDomain in serverless.yml
 ```
@@ -179,12 +161,12 @@ plugins:
 
 then
 ```
-npm run domain
+npm run serverless:domain
 ```
 
 #### deploy
 
 ```
-yarn run deploy
+npm run serverless:deploy
 ```
 then visit xxx.yourdomain.com

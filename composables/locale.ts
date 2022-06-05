@@ -1,7 +1,5 @@
 import { useI18n } from 'vue-i18n'
 
-import { useNuxtApp } from '#app'
-
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function useLocal() {
   const { locale } = useI18n()
