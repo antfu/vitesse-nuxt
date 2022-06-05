@@ -20,7 +20,7 @@ specifiers:
   '@vueuse/nuxt': ^8.6.0
   apollo-server-core: ^3.8.2
   class-validator: ^0.13.2
-  element-plus: ^2.2.4
+  element-plus: 2.2.2
   eslint: ^8.17.0
   graphql: ^15.8.0
   graphql-playground-html: ^1.6.30
@@ -53,7 +53,7 @@ dependencies:
   '@urql/vue': 0.6.2_graphql@15.8.0+vue@3.2.36
   apollo-server-core: 3.8.2_graphql@15.8.0
   class-validator: 0.13.2
-  element-plus: 2.2.4_vue@3.2.36
+  element-plus: 2.2.2_vue@3.2.36
   graphql: 15.8.0
   graphql-playground-html: 1.6.30
   graphql-tag: 2.12.6_graphql@15.8.0
@@ -1152,8 +1152,8 @@ packages:
       prettier: 2.6.2
     dev: true
 
-  /@element-plus/icons-vue/2.0.5_vue@3.2.36:
-    resolution: {integrity: sha512-jvNWyKcdvPvMDLTWjghrPY+bYHKqh7hbAFIPe+HWR073zilzt33csREzmKx3VwhdlJUW5u0nCqN+0rwI8jlH+w==}
+  /@element-plus/icons-vue/1.1.4_vue@3.2.36:
+    resolution: {integrity: sha512-Iz/nHqdp1sFPmdzRwHkEQQA3lKvoObk8azgABZ81QUOpW9s/lUyQVUSh0tNtEPZXQlKwlSh7SPgoVxzrE0uuVQ==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
@@ -4675,13 +4675,13 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /element-plus/2.2.4_vue@3.2.36:
-    resolution: {integrity: sha512-jktZr0o3ARDxWNWPEaJZQm2BN7thTpQl0aIfCUo5eB5m+zEap2DEcojyGKMHSQsCULcPM32NFfu2sHlhbhOiGA==}
+  /element-plus/2.2.2_vue@3.2.36:
+    resolution: {integrity: sha512-yGcj2Ayb0jZO1WbI51tHJ4efhlfWKlBqqGtWbzhq+tcpfaKzJZN+IHRouuFasqn0ZV3tWCDu1jggDR1+9y7XfQ==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
       '@ctrl/tinycolor': 3.4.1
-      '@element-plus/icons-vue': 2.0.5_vue@3.2.36
+      '@element-plus/icons-vue': 1.1.4_vue@3.2.36
       '@floating-ui/dom': 0.5.2
       '@popperjs/core': /@sxzz/popperjs-es/2.11.7
       '@types/lodash': 4.14.182
