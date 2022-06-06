@@ -20,7 +20,7 @@ const autoImportOpts = {
 
 export default defineNuxtConfig({
   autoImports: {
-    dirs: ['generated/typed-router'],
+    dirs: ['generated/typed-router', 'graphql/generated/ops/queries'],
   },
   modules: [
     // https://github.com/antfu/unplugin-auto-import
@@ -51,6 +51,7 @@ export default defineNuxtConfig({
     strict: true,
     typeCheck: true,
   },
+  ignore: ['graphql/generated/**'],
   // https://github.com/victorgarciaesgi/nuxt-typed-router
   nuxtTypedRouter: {
     // Output directory where you cant the files to be saved

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { usePersonQuery } from '~/graphql/generated/hello.query'
-
 const { data, fetching, error } = usePersonQuery({
   variables: ref({
     personInput: {

@@ -1,5 +1,5 @@
 schema: http://localhost:3000/api/graphql
-documents: graphql/**/*.graphql
+documents: graphql/**/*.gql
 # hooks:
 #  afterOneFileWrite:
 #    - eslint --fix
@@ -8,15 +8,15 @@ config:
   useTypeImports: true
 # Reference: https://github.com/bicouy0/nuxt3-urql/blob/0f9040955a42cdd6916f48665cdb475037b6b4e7/codegen.yml
 generates:
-  graphql/generated/types.ts:
+  graphql/generated/types.d.ts:
     plugins:
       - typescript
-  graphql/generated/:
+  graphql/generated/ops:
     preset: near-operation-file
     presetConfig:
-      baseTypesPath: types.d.ts
+      baseTypesPath: ../types.d.ts
       extension: .ts
-      folder: generated
+      # folder: generated
     plugins:
       - typescript-operations
       - typed-document-node

@@ -1,6 +1,0 @@
-query Person($personInput: PersonInput!) {
-  person(personInput: $personInput) {
-    name
-    tags
-  }
-}

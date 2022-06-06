@@ -1,8 +1,9 @@
 <script setup lang="ts">
-const { data } = await useFetch('/api/pageview')
-const time = useTimeAgo(
-  computed(() => data && data.value && data.value.startAt),
-)
+// FIXME: This giving `typescript-eslint` issues when auto-imported
+import { useFetch } from '#imports'
+
+const { data } = await useFetch('/api/pageview' as const)
+const time = useTimeAgo(computed(() => data.value.startAt))
 </script>
 
 <template>
