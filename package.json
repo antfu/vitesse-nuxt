@@ -13,7 +13,7 @@
     "build": "nuxi build",
     "build:lambda": "cross-env NITRO_PRESET=lambda nuxi build",
     "dev": "nuxi dev",
-    "graphql-gen": "graphql-gen-ops && graphql-codegen",
+    "graphql-gen": "npm run graphql-gen-ops && npm run graphql-codegen",
     "graphql-gen-ops": "gqlg --schemaFilePath ./graphql/generated/schema.gql --destDirPath ./graphql/generated/ops --depthLimit 100",
     "graphql-codegen": "graphql-codegen",
     "start": "node .output/server/index.mjs",

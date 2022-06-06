@@ -20,7 +20,12 @@ const autoImportOpts = {
 
 export default defineNuxtConfig({
   autoImports: {
-    dirs: ['generated/typed-router', 'graphql/generated/ops/queries'],
+    dirs: [
+      'generated/typed-router',
+      'graphql/generated/ops/queries',
+      'graphql/generated/ops/mutations',
+      'graphql/generated/ops/subscriptions',
+    ],
   },
   modules: [
     // https://github.com/antfu/unplugin-auto-import
@@ -36,10 +41,8 @@ export default defineNuxtConfig({
   ],
   build: {
     // https://github.com/element-plus/element-plus-nuxt-starter/blob/44644788ee0d2a2580769769f9885b5cd9f7c0ab/nuxt.config.ts#L27
-    transpile: [
-      () =>
-        (lifecycle === 'build' || lifecycle === 'generate') && 'element-plus',
-    ],
+    transpile:
+      lifecycle === 'build' || lifecycle === 'generate' ? ['element-plus'] : [],
   },
   experimental: {
     reactivityTransform: true,
