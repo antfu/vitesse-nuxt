@@ -8,7 +8,7 @@ import {
 import { useBody, useQuery } from 'h3'
 import type { IncomingMessage, ServerResponse } from 'http'
 
-export class ApolloServer extends ApolloServerBase {
+export default class ApolloServer extends ApolloServerBase {
   async createGraphQLServerOptions(
     request?: IncomingMessage,
     reply?: ServerResponse,
@@ -51,5 +51,3 @@ export class ApolloServer extends ApolloServerBase {
     })
   }
 }
-
-export default ApolloServer
