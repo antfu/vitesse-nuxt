@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ElConfigProvider } from 'element-plus'
+import { ElConfigProvider, ID_INJECTION_KEY } from 'element-plus'
 
 useHead({
   title: 'Vitesse Nuxt 3',
@@ -10,6 +10,13 @@ useHead({
       href: '/nuxt.png',
     },
   ],
+})
+
+// Element Plus needs Injecting ID for SSR
+// See: https://github.com/element-plus/element-plus/issues/7963
+provide(ID_INJECTION_KEY, {
+  prefix: Math.floor(Math.random() * 10000),
+  current: 0,
 })
 
 const { setPreferredLanguage } = useLocale()
