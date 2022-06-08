@@ -34,15 +34,21 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     'nuxt-lodash',
+    'unplugin-element-plus/nuxt',
     // Replaced by `plugin/i18n.ts` for now for this issue:
     // https://github.com/intlify/nuxt3/issues/68#issuecomment-1139435935
     // '@intlify/nuxt3',
     // 'nuxt-graphql-codegen'
   ],
   build: {
-    // https://github.com/element-plus/element-plus-nuxt-starter/blob/44644788ee0d2a2580769769f9885b5cd9f7c0ab/nuxt.config.ts#L27
-    transpile:
-      lifecycle === 'build' || lifecycle === 'generate' ? ['element-plus'] : [],
+    transpile: [
+      // https://github.com/element-plus/element-plus-nuxt-starter/blob/44644788ee0d2a2580769769f9885b5cd9f7c0ab/nuxt.config.ts#L27
+      ...(lifecycle === 'build' || lifecycle === 'generate'
+        ? ['element-plus']
+        : []),
+      // For importing 'element-plus/es/components/xxx/style/css' to work
+      'element-plus/es',
+    ],
   },
   experimental: {
     reactivityTransform: true,

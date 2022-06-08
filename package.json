@@ -79,6 +79,7 @@
     "stylelint-config-recommended-vue": "^1.4.0",
     "typescript": "^4.7.3",
     "unplugin-auto-import": "^0.8.7",
+    "unplugin-element-plus": "^0.4.0",
     "vite": "^2.9.9"
   }
 }

@@ -44,6 +44,7 @@ specifiers:
   type-graphql: ^1.1.1
   typescript: ^4.7.3
   unplugin-auto-import: ^0.8.7
+  unplugin-element-plus: ^0.4.0
   vite: ^2.9.9
   vue: ^3.2.36
   vue-i18n: ^9.1.10
@@ -96,6 +97,7 @@ devDependencies:
   stylelint-config-recommended-vue: 1.4.0_nk65nlqk3b7n3hrsok2e5orbsa
   typescript: 4.7.3
   unplugin-auto-import: 0.8.7_vite@2.9.9
+  unplugin-element-plus: 0.4.0_vite@2.9.9
   vite: 2.9.9_sass@1.52.2
 
 packages:
@@ -4727,6 +4729,10 @@ packages:
       string.prototype.trimend: 1.0.4
       string.prototype.trimstart: 1.0.4
       unbox-primitive: 1.0.1
+    dev: true
+
+  /es-module-lexer/0.10.5:
+    resolution: {integrity: sha512-+7IwY/kiGAacQfY+YBhKMvEmyAJnw5grTUgjG85Pe7vcUI/6b7pZjZG8nQ7+48YhzEAEqrEgD2dCz/JIK+AYvw==}
     dev: true
 
   /es-to-primitive/1.2.1:
@@ -10675,6 +10681,21 @@ packages:
       local-pkg: 0.4.1
       magic-string: 0.26.2
       unimport: 0.2.6_vite@2.9.9
+      unplugin: 0.6.3_vite@2.9.9
+    transitivePeerDependencies:
+      - esbuild
+      - rollup
+      - vite
+      - webpack
+    dev: true
+
+  /unplugin-element-plus/0.4.0_vite@2.9.9:
+    resolution: {integrity: sha512-iE4EZu8pp5Vz/qb9r45sCNSz9Px6KOthBpe6gFBV1E60g9A45HS+JhwAaj4Zki8HZ0YGW3LyrsBCrd+XhOypnQ==}
+    engines: {node: '>=14.17.0'}
+    dependencies:
+      '@rollup/pluginutils': 4.2.1
+      es-module-lexer: 0.10.5
+      magic-string: 0.26.2
       unplugin: 0.6.3_vite@2.9.9
     transitivePeerDependencies:
       - esbuild

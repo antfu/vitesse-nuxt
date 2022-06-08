@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import 'element-plus/theme-chalk/src/button.scss'
-
 import { ElButton } from 'element-plus'
 
 const { setLocale, locale } = useLocale()
