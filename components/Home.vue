@@ -2,7 +2,7 @@
 const { data, fetching, error } = usePersonQuery({
   variables: {
     personInput: {
-      name: 'John Doe',
+      name: 'Phil Xu',
     },
   },
 })
