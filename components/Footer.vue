@@ -3,7 +3,7 @@ import 'element-plus/theme-chalk/src/button.scss'
 
 import { ElButton } from 'element-plus'
 
-const { setLocale, locale } = useLocal()
+const { setLocale, locale } = useLocale()
 </script>
 
 <template>
@@ -15,7 +15,7 @@ const { setLocale, locale } = useLocal()
       target="_blank"
     />
     <DarkToggle />
-    <el-button @click="setLocale(locale === 'en' ? 'zhCn' : 'en')">
+    <el-button @click="setLocale(locale === 'en' ? 'zh-CN' : 'en')">
       en / zh-CN
     </el-button>
   </div>

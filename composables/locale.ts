@@ -1,7 +1,7 @@
 import { useI18n } from 'vue-i18n'
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-export function useLocal() {
+export function useLocale() {
   const { locale } = useI18n()
 
   const currentLocale = useCookie('locale', { maxAge: 20 * 365 * 24 * 60 * 60 })

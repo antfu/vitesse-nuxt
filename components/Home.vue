@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const { data, fetching, error } = usePersonQuery({
-  variables: ref({
+  variables: {
     personInput: {
-      name: 'Phil Xu',
+      name: 'John Doe',
     },
-  }),
+  },
 })
 </script>
 

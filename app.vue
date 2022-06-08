@@ -12,7 +12,7 @@ useHead({
   ],
 })
 
-const { setPreferredLanguage } = useLocal()
+const { setPreferredLanguage } = useLocale()
 setPreferredLanguage()
 </script>
 

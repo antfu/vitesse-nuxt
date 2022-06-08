@@ -2,8 +2,6 @@
 
 import { defineNuxtConfig } from 'nuxt'
 
-import locales from './locales'
-
 const lifecycle = process.env.npm_lifecycle_event
 
 const autoImportOpts = {
@@ -36,8 +34,10 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     'nuxt-lodash',
-    '@intlify/nuxt3',
-    //  'nuxt-graphql-codegen'
+    // Replaced by `plugin/i18n.ts` for now for this issue:
+    // https://github.com/intlify/nuxt3/issues/68#issuecomment-1139435935
+    // '@intlify/nuxt3',
+    // 'nuxt-graphql-codegen'
   ],
   build: {
     // https://github.com/element-plus/element-plus-nuxt-starter/blob/44644788ee0d2a2580769769f9885b5cd9f7c0ab/nuxt.config.ts#L27
@@ -75,12 +75,12 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
   // https://github.com/intlify/nuxt3
-  intlify: {
-    vueI18n: {
-      locale: 'zh-CN',
-      messages: locales,
-    },
-  },
+  // intlify: {
+  //   vueI18n: {
+  //     locale: 'zh-CN',
+  //     messages: locales,
+  //   },
+  // },
   // vite: {
   //   plugins: [],
   // },
