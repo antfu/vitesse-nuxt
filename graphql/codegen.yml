@@ -1,5 +1,5 @@
-schema: http://localhost:3000/api/graphql
-documents: graphql/**/*.gql
+schema: graphql/generated/schema.gql
+documents: '**/*.gql'
 # hooks:
 #  afterOneFileWrite:
 #    - eslint --fix
