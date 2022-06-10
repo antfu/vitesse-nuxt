@@ -49,7 +49,7 @@ export default defineNuxtPlugin((nuxt) => {
   // }
   //   const cacheExchange = graphCacheExchange(cacheConfig)
 
-  const host = process.server ? 'http://localhost:3000' : `//${location.host}`
+  const host = process.server ? 'http://127.0.0.1:3000' : `//${location.host}`
   const url = `${host}/api/graphql`
   const opt: ClientOptions = {
     url,
