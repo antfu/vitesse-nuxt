@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ElButton } from 'element-plus'
-
 const { setLocale, locale } = useLocale()
 </script>
 

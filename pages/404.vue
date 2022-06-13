@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ElButton } from 'element-plus'
-
 const router = useRouter()
 </script>
 

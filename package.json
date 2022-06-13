@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "@daotl/eslint-config-vue": "^0.3.25",
+    "@daotl/unplugin-vue-components": "^0.19.6",
     "@graphql-codegen/cli": "^2.6.2",
     "@graphql-codegen/near-operation-file-preset": "^2.2.14",
     "@graphql-codegen/typed-document-node": "^2.2.13",
@@ -79,7 +80,7 @@
     "stylelint-config-recommended-vue": "^1.4.0",
     "typescript": "^4.7.3",
     "unplugin-auto-import": "^0.8.7",
-    "unplugin-element-plus": "^0.4.0",
+    "unplugin-vue-components": "^0.19.6",
     "vite": "^2.9.12"
   }
 }

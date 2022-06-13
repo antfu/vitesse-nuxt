@@ -1,5 +1,6 @@
 /* eslint-disable import/no-unresolved,@typescript-eslint/explicit-function-return-type */
 
+import { ElementPlusResolver } from '@daotl/unplugin-vue-components/resolvers'
 import { defineNuxtConfig } from 'nuxt'
 
 const lifecycle = process.env.npm_lifecycle_event
@@ -13,7 +14,13 @@ const autoImportOpts = {
     {},
   ],
   // dirs: ['generated/typed-router'],
+  resolvers: [ElementPlusResolver({ nuxt: true, ssr: true })],
   dts: './generated/auto-imports.d.ts',
+}
+
+const vueComponentsOpts = {
+  resolvers: [ElementPlusResolver({ nuxt: true, ssr: true })],
+  dts: './generated/vue-components.d.ts',
 }
 
 export default defineNuxtConfig({
@@ -26,15 +33,15 @@ export default defineNuxtConfig({
     ],
   },
   modules: [
+    'nuxt-typed-router',
     // https://github.com/antfu/unplugin-auto-import
     ['unplugin-auto-import/nuxt', autoImportOpts],
-    'nuxt-typed-router',
+    ['unplugin-vue-components/nuxt', vueComponentsOpts],
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     'nuxt-lodash',
-    'unplugin-element-plus/nuxt',
     // Replaced by `plugin/i18n.ts` for now for this issue:
     // https://github.com/intlify/nuxt3/issues/68#issuecomment-1139435935
     // '@intlify/nuxt3',
@@ -46,8 +53,9 @@ export default defineNuxtConfig({
       ...(lifecycle === 'build' || lifecycle === 'generate'
         ? ['element-plus']
         : []),
+      // Already solved by setting `nuxt: truessr: true` to `ElementPlusResolver`
       // For importing 'element-plus/es/components/xxx/style/css' to work
-      'element-plus/es',
+      // 'element-plus/es',
     ],
   },
   experimental: {

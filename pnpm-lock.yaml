@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@daotl/eslint-config-vue': ^0.3.25
+  '@daotl/unplugin-vue-components': ^0.19.6
   '@graphql-codegen/cli': ^2.6.2
   '@graphql-codegen/near-operation-file-preset': ^2.2.14
   '@graphql-codegen/typed-document-node': ^2.2.13
@@ -44,7 +45,7 @@ specifiers:
   type-graphql: ^1.1.1
   typescript: ^4.7.3
   unplugin-auto-import: ^0.8.7
-  unplugin-element-plus: ^0.4.0
+  unplugin-vue-components: ^0.19.6
   vite: ^2.9.12
   vue: ^3.2.37
   vue-i18n: ^9.1.10
@@ -67,6 +68,7 @@ dependencies:
 
 devDependencies:
   '@daotl/eslint-config-vue': 0.3.25_swzprww56tbt6xqyypkb3snuza
+  '@daotl/unplugin-vue-components': 0.19.6_vite@2.9.12+vue@3.2.37
   '@graphql-codegen/cli': 2.6.2_abw6i64koqywqegjfxipkq6u5q
   '@graphql-codegen/near-operation-file-preset': 2.2.14_graphql@15.8.0
   '@graphql-codegen/typed-document-node': 2.2.13_graphql@15.8.0
@@ -97,7 +99,7 @@ devDependencies:
   stylelint-config-recommended-vue: 1.4.0_rbvrlex3zkw5dqq3eg5f64dp2u
   typescript: 4.7.3
   unplugin-auto-import: 0.8.7_vite@2.9.12
-  unplugin-element-plus: 0.4.0_vite@2.9.12
+  unplugin-vue-components: 0.19.6_vite@2.9.12+vue@3.2.37
   vite: 2.9.12_sass@1.52.3
 
 packages:
@@ -1196,6 +1198,38 @@ packages:
       prettier: 2.6.2
     dev: true
 
+  /@daotl/unplugin-vue-components/0.19.6_vite@2.9.12+vue@3.2.37:
+    resolution: {integrity: sha512-nkTQAF9RHIj31LkOKuKsTFuL3YX3Vmi5A1Q5iIDtXRskv94qQFCcvhckW82KLWD4iEvn+KpcDkp1n2Nu0KPZew==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      '@babel/parser': ^7.15.8
+      '@babel/traverse': ^7.15.4
+      vue: 2 || 3
+    peerDependenciesMeta:
+      '@babel/parser':
+        optional: true
+      '@babel/traverse':
+        optional: true
+    dependencies:
+      '@antfu/utils': 0.5.2
+      '@rollup/pluginutils': 4.2.1
+      chokidar: 3.5.3
+      debug: 4.3.4
+      fast-glob: 3.2.11
+      local-pkg: 0.4.1
+      magic-string: 0.26.2
+      minimatch: 5.1.0
+      resolve: 1.22.0
+      unplugin: 0.6.3_vite@2.9.12
+      vue: 3.2.37
+    transitivePeerDependencies:
+      - esbuild
+      - rollup
+      - supports-color
+      - vite
+      - webpack
+    dev: true
+
   /@element-plus/icons-vue/2.0.5_vue@3.2.37:
     resolution: {integrity: sha512-jvNWyKcdvPvMDLTWjghrPY+bYHKqh7hbAFIPe+HWR073zilzt33csREzmKx3VwhdlJUW5u0nCqN+0rwI8jlH+w==}
     peerDependencies:
@@ -2002,11 +2036,11 @@ packages:
     resolution: {integrity: sha512-YBI/6o2EBz02tdEJRBK8xkt3zvOFOWlLBf7WKYGBsSYSRtjjgrqPe2skp6VLLmKx5WbHHDNcW+6oACaurxGzeA==}
     dev: true
 
-  /@nuxt/kit-edge/3.0.0-rc.3-27584539.9d28c0a_vite@2.9.12:
-    resolution: {integrity: sha512-bbCZvbMxTCc501OzDRnbhXgkZVcSFor6DfuKTvmurqsPwmkIQv00dCnVI7jht5KQP/6wdBpW0GlNFz3lM+/j0A==}
+  /@nuxt/kit-edge/3.0.0-rc.4-27585508.c9d4b2e_vite@2.9.12:
+    resolution: {integrity: sha512-xnd3TfKBbjxic0LF7KLEqLDNWN2mjKUoSqbIENFS9EqvkGg42HnN9u85WUKz6RUwfwQbaGpmQZbesBGUzch5Tg==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0}
     dependencies:
-      '@nuxt/schema': /@nuxt/schema-edge/3.0.0-rc.3-27584539.9d28c0a_vite@2.9.12
+      '@nuxt/schema': /@nuxt/schema-edge/3.0.0-rc.4-27585508.c9d4b2e_vite@2.9.12
       c12: 0.2.7
       consola: 2.15.3
       defu: 6.0.0
@@ -2122,8 +2156,8 @@ packages:
       - webpack
     dev: true
 
-  /@nuxt/schema-edge/3.0.0-rc.3-27584539.9d28c0a_vite@2.9.12:
-    resolution: {integrity: sha512-CoNb1oWoZ5LSNOr8SK4iN9ug4FcNdHk8pjzlFjEvyvNUfoSZ5QLd1/1RMavlL2lb+5IJ113SkawOWWaSBfTSOA==}
+  /@nuxt/schema-edge/3.0.0-rc.4-27585508.c9d4b2e_vite@2.9.12:
+    resolution: {integrity: sha512-f3Kd1tLNicJpOaenmb+Gpw3MKr1IfquqqcxcH+1kQMNwa+F1CGmtEglymm4QM9scb2j+bPWWyLM7o+Q0SlXL2w==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0}
     dependencies:
       c12: 0.2.7
@@ -3663,6 +3697,12 @@ packages:
       balanced-match: 1.0.2
       concat-map: 0.0.1
 
+  /brace-expansion/2.0.1:
+    resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
+    dependencies:
+      balanced-match: 1.0.2
+    dev: true
+
   /braces/3.0.2:
     resolution: {integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==}
     engines: {node: '>=8'}
@@ -4782,10 +4822,6 @@ packages:
       string.prototype.trimend: 1.0.4
       string.prototype.trimstart: 1.0.4
       unbox-primitive: 1.0.1
-    dev: true
-
-  /es-module-lexer/0.10.5:
-    resolution: {integrity: sha512-+7IwY/kiGAacQfY+YBhKMvEmyAJnw5grTUgjG85Pe7vcUI/6b7pZjZG8nQ7+48YhzEAEqrEgD2dCz/JIK+AYvw==}
     dev: true
 
   /es-to-primitive/1.2.1:
@@ -7689,6 +7725,13 @@ packages:
       brace-expansion: 1.1.11
     dev: true
 
+  /minimatch/5.1.0:
+    resolution: {integrity: sha512-9TPBGGak4nHfGZsPBohm9AWg6NoT7QTCehS3BIJABslyZbzxfV78QM2Y6+i741OPZIafFAaiiEMh5OyIrJPgtg==}
+    engines: {node: '>=10'}
+    dependencies:
+      brace-expansion: 2.0.1
+    dev: true
+
   /minimist-options/4.1.0:
     resolution: {integrity: sha512-Q4r8ghd80yhO/0j1O3B2BjweX3fiHg9cdOwjJd2J76Q135c+NDxGCqdYKQ1SKBuFfgWbAUzBfvYjPUEeNgqN1A==}
     engines: {node: '>= 6'}
@@ -8113,7 +8156,7 @@ packages:
   /nuxt-typed-router/1.1.2_vite@2.9.12:
     resolution: {integrity: sha512-/moOurpYDlTPf8WjX/Zj7SVInsF+mPFi7NwknMKQMWB5bZ79GB2yGHsQz1+rXeJdkroWO1C04xsQbw1u9rbO7A==}
     dependencies:
-      '@nuxt/kit': /@nuxt/kit-edge/3.0.0-rc.3-27584539.9d28c0a_vite@2.9.12
+      '@nuxt/kit': /@nuxt/kit-edge/3.0.0-rc.4-27585508.c9d4b2e_vite@2.9.12
       chalk: 4.1.2
       lodash-es: 4.17.21
       log-symbols: 5.1.0
@@ -10743,17 +10786,34 @@ packages:
       - webpack
     dev: true
 
-  /unplugin-element-plus/0.4.0_vite@2.9.12:
-    resolution: {integrity: sha512-iE4EZu8pp5Vz/qb9r45sCNSz9Px6KOthBpe6gFBV1E60g9A45HS+JhwAaj4Zki8HZ0YGW3LyrsBCrd+XhOypnQ==}
-    engines: {node: '>=14.17.0'}
+  /unplugin-vue-components/0.19.6_vite@2.9.12+vue@3.2.37:
+    resolution: {integrity: sha512-APvrJ9Hpid1MLT0G4PWerMJgARhNw6dzz0pcCwCxaO2DR7VyvDacMqjOQNC6ukq7FSw3wzD8VH+9i3EFXwkGmw==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      '@babel/parser': ^7.15.8
+      '@babel/traverse': ^7.15.4
+      vue: 2 || 3
+    peerDependenciesMeta:
+      '@babel/parser':
+        optional: true
+      '@babel/traverse':
+        optional: true
     dependencies:
+      '@antfu/utils': 0.5.2
       '@rollup/pluginutils': 4.2.1
-      es-module-lexer: 0.10.5
+      chokidar: 3.5.3
+      debug: 4.3.4
+      fast-glob: 3.2.11
+      local-pkg: 0.4.1
       magic-string: 0.26.2
+      minimatch: 5.1.0
+      resolve: 1.22.0
       unplugin: 0.6.3_vite@2.9.12
+      vue: 3.2.37
     transitivePeerDependencies:
       - esbuild
       - rollup
+      - supports-color
       - vite
       - webpack
     dev: true
