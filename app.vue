@@ -14,8 +14,9 @@ useHead({
 
 // Element Plus needs Injecting ID for SSR
 // See: https://github.com/element-plus/element-plus/issues/7963
+// From: https://github.com/element-plus/element-plus-nuxt-starter/blob/44644788ee0d2a2580769769f9885b5cd9f7c0ab/app.vue#L4
 provide(ID_INJECTION_KEY, {
-  prefix: Math.floor(Math.random() * 10000),
+  prefix: 100,
   current: 0,
 })
 

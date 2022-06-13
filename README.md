@@ -8,6 +8,7 @@
 
 References:
 - https://github.com/antfu/vitesse-nuxt3
+- https://github.com/element-plus/element-plus-nuxt-starter
 - https://github.com/bicouy0/nuxt3-urql
 - https://github.com/newbeea/nuxt3-apollo-starter
 
