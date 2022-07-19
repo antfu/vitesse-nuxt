@@ -5,7 +5,8 @@
     "build": "nuxi build",
     "dev": "nuxi dev",
     "start": "node .output/server/index.mjs",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "postinstall": "nuxi prepare"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
