@@ -1,9 +1,7 @@
 /* eslint-disable import/no-unresolved,@typescript-eslint/explicit-function-return-type */
 
 import { ElementPlusResolver } from '@daotl/unplugin-vue-components/resolvers'
-import path from 'node:path'
 import { defineNuxtConfig } from 'nuxt'
-
 
 const lifecycle = process.env.npm_lifecycle_event
 
@@ -77,11 +75,11 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
   ignore: [
-      'graphql/generated/**',
+    'graphql/generated/**',
     'generated/typed-router',
     ...(process.env.NODE_ENV !== 'development'
-        ? ['pages/**/*.ts', 'pages/**/components']
-        : []),
+      ? ['pages/**/*.ts', 'pages/**/components']
+      : []),
   ],
   vue: {
     compilerOptions: {
@@ -122,16 +120,16 @@ export default defineNuxtConfig({
   // vite: {
   //   plugins: [],
   // },
-  vite: {
-    server: {
-      proxy: {
-        // https://github.com/nuxt/framework/discussions/1223#discussioncomment-3113141
-        '/api': {
-          target: 'http://local.dev:8080', // process.env.API_URL,
-          changeOrigin: true,
-          rewrite: (path) => path,
-        },
-      },
-    },
-  },
+  // vite: {
+  //   server: {
+  //     proxy: {
+  //       // https://github.com/nuxt/framework/discussions/1223#discussioncomment-3113141
+  //       '/api': {
+  //         target: 'http://local.dev:8080', // process.env.API_URL,
+  //         changeOrigin: true,
+  //         rewrite: (path) => path,
+  //       },
+  //     },
+  //   },
+  // },
 })
