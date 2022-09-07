@@ -132,4 +132,17 @@ export default defineNuxtConfig({
   //     },
   //   },
   // },
+
+  // https://github.com/nuxt/framework/issues/6204#issuecomment-1201398080
+  hooks: {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    'vite:extendConfig': function (config: any, { isServer }: any) {
+      if (isServer) {
+        // Workaround for netlify issue
+        // https://github.com/nuxt/framework/issues/6204
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+        config.build.rollupOptions.output.inlineDynamicImports = true
+      }
+    },
+  },
 })

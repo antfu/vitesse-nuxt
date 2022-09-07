@@ -4,3 +4,4 @@ node_modules
 .nuxt
 plugins/__*.ts
 generated
+node-jiti

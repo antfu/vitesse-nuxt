@@ -1,6 +1,7 @@
 node_modules
 *.log
 dist
+node-jiti
 .output
 .nuxt
 .env
