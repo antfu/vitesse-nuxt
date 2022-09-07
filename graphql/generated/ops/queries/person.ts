@@ -1,7 +1,6 @@
 import type * as Types from '../../types.d';
 
 import type { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/core';
-import * as Operations from '';
 import * as Urql from '@urql/vue';
 export type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;
 export type PersonQueryVariables = Types.Exact<{

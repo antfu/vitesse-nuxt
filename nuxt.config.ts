@@ -1,9 +1,17 @@
 /* eslint-disable import/no-unresolved,@typescript-eslint/explicit-function-return-type */
 
 import { ElementPlusResolver } from '@daotl/unplugin-vue-components/resolvers'
+import path from 'node:path'
 import { defineNuxtConfig } from 'nuxt'
 
+
 const lifecycle = process.env.npm_lifecycle_event
+
+const elementPlusResolver = ElementPlusResolver({
+  nuxt: true,
+  ssr: true,
+  directives: false,
+})
 
 const autoImportOpts = {
   // global imports to register
@@ -14,8 +22,9 @@ const autoImportOpts = {
     {},
   ],
   // dirs: ['generated/typed-router'],
-  resolvers: [ElementPlusResolver({ nuxt: true, ssr: true })],
+  resolvers: [elementPlusResolver],
   dts: './generated/auto-imports.d.ts',
+  vueTemplate: true,
 }
 
 const vueComponentsOpts = {
@@ -41,7 +50,6 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
-    'nuxt-lodash',
     // Replaced by `plugin/i18n.ts` for now for this issue:
     // https://github.com/intlify/nuxt3/issues/68#issuecomment-1139435935
     // '@intlify/nuxt3',
@@ -68,7 +76,23 @@ export default defineNuxtConfig({
     strict: true,
     typeCheck: true,
   },
-  ignore: ['graphql/generated/**'],
+  ignore: [
+      'graphql/generated/**',
+    'generated/typed-router',
+    ...(process.env.NODE_ENV !== 'development'
+        ? ['pages/**/*.ts', 'pages/**/components']
+        : []),
+  ],
+  vue: {
+    compilerOptions: {
+      directiveTransforms: {
+        loading: () => ({
+          props: [],
+          needRuntime: true,
+        }),
+      },
+    },
+  },
   // https://github.com/victorgarciaesgi/nuxt-typed-router
   nuxtTypedRouter: {
     // Output directory where you cant the files to be saved
@@ -98,4 +122,16 @@ export default defineNuxtConfig({
   // vite: {
   //   plugins: [],
   // },
+  vite: {
+    server: {
+      proxy: {
+        // https://github.com/nuxt/framework/discussions/1223#discussioncomment-3113141
+        '/api': {
+          target: 'http://local.dev:8080', // process.env.API_URL,
+          changeOrigin: true,
+          rewrite: (path) => path,
+        },
+      },
+    },
+  },
 })

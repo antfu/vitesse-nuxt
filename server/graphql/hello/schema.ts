@@ -3,7 +3,7 @@ import { Field, InputType, ObjectType } from 'type-graphql'
 @InputType()
 export class PersonInput {
   @Field(() => String)
-  name: string
+  name!: string
 }
 
 @ObjectType()
