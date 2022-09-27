@@ -10,16 +10,16 @@
     "generate": "nuxi generate"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.26.2",
-    "@iconify-json/carbon": "^1.1.7",
+    "@antfu/eslint-config": "^0.27.0",
+    "@iconify-json/carbon": "^1.1.8",
     "@iconify-json/twemoji": "^1.1.5",
-    "@nuxtjs/color-mode": "^3.1.4",
-    "@pinia/nuxt": "^0.4.1",
-    "@unocss/nuxt": "^0.45.13",
-    "@vueuse/nuxt": "^9.1.1",
-    "eslint": "^8.23.0",
-    "nuxt": "^3.0.0-rc.8",
-    "pinia": "^2.0.21",
-    "typescript": "^4.8.2"
+    "@nuxtjs/color-mode": "^3.1.6",
+    "@pinia/nuxt": "^0.4.2",
+    "@unocss/nuxt": "^0.45.25",
+    "@vueuse/nuxt": "^9.3.0",
+    "eslint": "^8.24.0",
+    "nuxt": "^3.0.0-rc.11",
+    "pinia": "^2.0.22",
+    "typescript": "^4.8.3"
   }
 }
