@@ -3,7 +3,7 @@
 import { useFetch } from '#imports'
 
 const { data } = await useFetch('/api/pageview' as const)
-const time = useTimeAgo(computed(() => data.value.startAt))
+const time = useTimeAgo(computed(() => data.value!.startAt))
 </script>
 
 <template>

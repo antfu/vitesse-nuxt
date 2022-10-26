@@ -1,7 +1,4 @@
-/* eslint-disable import/no-unresolved,@typescript-eslint/explicit-function-return-type */
-
 import { ElementPlusResolver } from '@daotl/unplugin-vue-components/resolvers'
-import { defineNuxtConfig } from 'nuxt'
 
 const lifecycle = process.env.npm_lifecycle_event
 
@@ -31,7 +28,7 @@ const vueComponentsOpts = {
 }
 
 export default defineNuxtConfig({
-  autoImports: {
+  imports: {
     dirs: [
       'generated/typed-router',
       'graphql/generated/ops/queries',
@@ -66,9 +63,9 @@ export default defineNuxtConfig({
   },
   experimental: {
     reactivityTransform: true,
-    // Disabled for now, see:
+    // May disable for error:
     // https://github.com/antfu/vitesse-nuxt3/issues/42#issuecomment-1126377430
-    // viteNode: true,
+    // viteNode: false,
   },
   typescript: {
     strict: true,
