@@ -61,6 +61,8 @@ References:
 
 - 🛠 [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs
 
+- 🐉 [RxJS](https://rxjs.dev/)
+
 - 📥 APIs auto importing - for Composition API, VueUse and custom composables.
 
 - 🏎 Zero-config cloud functions and deploy

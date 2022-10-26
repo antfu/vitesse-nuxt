@@ -52,11 +52,14 @@ export default defineNuxtConfig({
   ],
   build: {
     transpile: [
+      // Fix error: "[nuxt] [request error] [unhandled] [500] Cannot find module './internal/Observable'"
+      // https://github.com/nuxt/framework/discussions/7772#discussioncomment-3970252
+      'rxjs',
       // https://github.com/element-plus/element-plus-nuxt-starter/blob/44644788ee0d2a2580769769f9885b5cd9f7c0ab/nuxt.config.ts#L27
       ...(lifecycle === 'build' || lifecycle === 'generate'
         ? ['element-plus']
         : []),
-      // Already solved by setting `nuxt: truessr: true` to `ElementPlusResolver`
+      // Already solved by setting `nuxt: true, ssr: true` to `ElementPlusResolver`
       // For importing 'element-plus/es/components/xxx/style/css' to work
       // 'element-plus/es',
     ],
@@ -94,11 +97,6 @@ export default defineNuxtConfig({
     outDir: './generated/typed-router',
     // Name of the routesNames object
     // routesObjectName: 'routerPagesNames',
-  },
-  // https://github.com/cipami/nuxt-lodash
-  lodash: {
-    prefix: 'lo',
-    prefixSkip: [],
   },
   css: ['~/styles/index.scss'],
   unocss: {

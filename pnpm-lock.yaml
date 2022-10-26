@@ -36,6 +36,7 @@ specifiers:
   postcss-syntax: ^0.36.2
   prettier: ^2.7.1
   reflect-metadata: ^0.1.13
+  rxjs: ^7.5.7
   sass: ^1.55.0
   stylelint: ^14.14.0
   stylelint-config-property-sort-order-smacss: ^9.0.0
@@ -62,6 +63,7 @@ dependencies:
   graphql-tag: 2.12.6_graphql@15.8.0
   pinia: 2.0.23_l7r24p6nevbtlimqmqcwa3ouhu
   reflect-metadata: 0.1.13
+  rxjs: 7.5.7
   type-graphql: 1.1.1_v2revtygxcm7xrdg2oz3ssohfu
   vue: 3.2.41
   vue-i18n: 9.2.2_vue@3.2.41
@@ -9371,7 +9373,6 @@ packages:
     resolution: {integrity: sha512-z9MzKh/UcOqB3i20H6rtrlaE/CgjLOvheWK/9ILrbhROGTweAi1BaFsTT9FbwZi5Trr1qNRs+MXkhmR06awzQA==}
     dependencies:
       tslib: 2.4.0
-    dev: true
 
   /sade/1.8.1:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}

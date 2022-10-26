@@ -45,6 +45,7 @@
     "graphql-tag": "^2.12.6",
     "pinia": "^2.0.23",
     "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.5.7",
     "type-graphql": "^1.1.1",
     "vue": "^3.2.41",
     "vue-i18n": "^9.2.2",
