@@ -8,6 +8,15 @@ module.exports = {
       parserOptions: {
         project: 'tsconfig.json',
       },
+      rules: {
+        'vue/component-name-in-template-casing': [
+          'error',
+          'PascalCase',
+          {
+            ignores: ['/^el-.+/'],
+          },
+        ],
+      },
     },
   ],
 }

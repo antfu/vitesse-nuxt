@@ -15,14 +15,13 @@ export function useLocale() {
     if (!currentLocale.value) {
       if (process.server) {
         const nuxtApp = useNuxtApp()
-        /* eslint-disable @typescript-eslint/no-unsafe-member-access,@typescript-eslint/no-unsafe-assignment,@typescript-eslint/no-unsafe-call,@typescript-eslint/no-unsafe-argument */
+
         if (nuxtApp.ssrContext?.event.req.headers) {
           const acceptLanguage =
             nuxtApp.ssrContext.event.req.headers['accept-language'] || 'en'
           const preferredLanguage = acceptLanguage.split(',')[0]
           setLocale(preferredLanguage)
         }
-        /* eslint-enable */
       }
     } else {
       setLocale(currentLocale.value)

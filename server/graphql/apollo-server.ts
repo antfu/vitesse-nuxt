@@ -5,7 +5,6 @@ import {
   isHttpQueryError,
   runHttpQuery,
 } from 'apollo-server-core'
-import { useBody, useQuery } from 'h3'
 import type { IncomingMessage, ServerResponse } from 'http'
 
 export default class ApolloServer extends ApolloServerBase {
@@ -25,7 +24,7 @@ export default class ApolloServer extends ApolloServerBase {
         const { graphqlResponse, responseInit } = await runHttpQuery([], {
           method: req.method || 'GET',
           options,
-          query: req.method === 'POST' ? await useBody(req) : useQuery(req),
+          query: req.method === 'POST' ? await useBody(event) : useQuery(event),
           request: convertNodeHttpToRequest(req),
         })
         if (responseInit.headers) {
