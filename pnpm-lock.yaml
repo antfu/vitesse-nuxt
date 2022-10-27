@@ -2,7 +2,6 @@ lockfileVersion: 5.4
 
 specifiers:
   '@daotl/eslint-config-vue': ^0.3.32
-  '@daotl/unplugin-vue-components': ^0.22.7
   '@graphql-codegen/cli': ^2.13.7
   '@graphql-codegen/near-operation-file-preset': ^2.4.3
   '@graphql-codegen/typed-document-node': ^2.3.5
@@ -71,7 +70,6 @@ dependencies:
 
 devDependencies:
   '@daotl/eslint-config-vue': 0.3.32_dmjzcauo3cshxeipj7bv64ktgm
-  '@daotl/unplugin-vue-components': 0.22.7_vue@3.2.41
   '@graphql-codegen/cli': 2.13.7_wpxdl56otbtaxlsl4eiqzy5xaq
   '@graphql-codegen/near-operation-file-preset': 2.4.3_graphql@15.8.0
   '@graphql-codegen/typed-document-node': 2.3.5_graphql@15.8.0
@@ -1043,31 +1041,6 @@ packages:
     resolution: {integrity: sha512-Kpim6HuATg2kEbbMlSB8Foetp8rj8WkV9tWaESDU2ZLOkaHtZIg4A1BMsiqt8ijzDcY88CIMhxxF38pChsAWDQ==}
     dependencies:
       prettier: 2.7.1
-    dev: true
-
-  /@daotl/unplugin-vue-components/0.22.7_vue@3.2.41:
-    resolution: {integrity: sha512-wjaPEFifYt2qKSHR5KkqBQkjv5rOGgYv9B40rPYfXUvct+usKKwkXZ3AeJB80NAanpNeIK8VVOysc1TWc5AcEw==}
-    engines: {node: '>=14'}
-    peerDependencies:
-      '@babel/parser': ^7.15.8
-      vue: 2 || 3
-    peerDependenciesMeta:
-      '@babel/parser':
-        optional: true
-    dependencies:
-      '@antfu/utils': 0.5.2
-      '@rollup/pluginutils': 4.2.1
-      chokidar: 3.5.3
-      debug: 4.3.4
-      fast-glob: 3.2.12
-      local-pkg: 0.4.2
-      magic-string: 0.26.7
-      minimatch: 5.1.0
-      resolve: 1.22.1
-      unplugin: 0.9.6
-      vue: 3.2.41
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /@element-plus/icons-vue/2.0.10_vue@3.2.41:
