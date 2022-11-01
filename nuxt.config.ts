@@ -7,10 +7,11 @@ export default defineNuxtConfig({
   ],
   experimental: {
     reactivityTransform: true,
+    inlineSSRStyles: false,
   },
-  unocss: {
-    preflight: true,
-  },
+  css: [
+    '@unocss/reset/tailwind.css',
+  ],
   colorMode: {
     classSuffix: '',
   },
