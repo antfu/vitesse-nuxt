@@ -6,6 +6,5 @@
   "files.associations": {
     "*.css": "postcss"
   },
-  "editor.formatOnSave": false,
-  "unocss.root": "../"
+  "editor.formatOnSave": false
 }
