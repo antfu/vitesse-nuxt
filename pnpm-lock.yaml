@@ -4,7 +4,7 @@ specifiers:
   '@antfu/eslint-config': ^0.30.1
   '@iconify-json/carbon': ^1.1.10
   '@iconify-json/twemoji': ^1.1.5
-  '@nuxtjs/color-mode': ^3.1.8
+  '@nuxtjs/color-mode': ^3.2.0
   '@pinia/nuxt': ^0.4.3
   '@unocss/nuxt': ^0.46.5
   '@vueuse/nuxt': ^9.5.0
@@ -17,7 +17,7 @@ devDependencies:
   '@antfu/eslint-config': 0.30.1_e3uo4sehh4zr4i6m57mkkxxv7y
   '@iconify-json/carbon': 1.1.10
   '@iconify-json/twemoji': 1.1.5
-  '@nuxtjs/color-mode': 3.1.8
+  '@nuxtjs/color-mode': 3.2.0
   '@pinia/nuxt': 0.4.3_typescript@4.9.3
   '@unocss/nuxt': 0.46.5
   '@vueuse/nuxt': 9.5.0_nuxt@3.0.0
@@ -1017,13 +1017,14 @@ packages:
       - vti
     dev: true
 
-  /@nuxtjs/color-mode/3.1.8:
-    resolution: {integrity: sha512-ahgjmSzpjTpaxvyyGA/1wD2rNcSFXiqs3/A/GEllB1s4BboJVnBIqkwIQpAguq7IDVZG2tMAvqmnZHSfwrI3IA==}
+  /@nuxtjs/color-mode/3.2.0:
+    resolution: {integrity: sha512-isDR01yfadopiHQ/VEVUpyNSPrk5PCjUHS4t1qYRZwuRGefU4s9Iaxf6H9nmr1QFzoMgTm+3T0r/54jLwtpZbA==}
     dependencies:
-      '@nuxt/kit': 3.0.0-rc.11
+      '@nuxt/kit': 3.0.0
       lodash.template: 4.5.0
-      pathe: 0.3.8
+      pathe: 1.0.0
     transitivePeerDependencies:
+      - rollup
       - supports-color
     dev: true
 
