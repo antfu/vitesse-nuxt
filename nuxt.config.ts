@@ -9,9 +9,10 @@ export default defineNuxtConfig({
     reactivityTransform: true,
     inlineSSRStyles: false,
   },
-  css: [
-    '@unocss/reset/tailwind.css',
-  ],
+  unocss: {
+    preflight: true, // Injecting `@unocss/reset/tailwind.css` entry
+  },
+  css: [],
   colorMode: {
     classSuffix: '',
   },
