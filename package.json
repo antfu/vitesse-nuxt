@@ -26,7 +26,6 @@
     "eslint:fix": "eslint . --fix",
     "stylelint": "stylelint \"**/*.{css,scss,vue,tsx}\"",
     "stylelint:fix": "stylelint \"**/*.{css,scss,vue,tsx}\" --fix",
-    "prepare": "husky install",
     "postinstall": "nuxi prepare"
   },
   "prettier": "@daotl/prettier-config",
@@ -50,8 +49,7 @@
     "@unocss/nuxt": "^0.47.6",
     "@vueuse/nuxt": "^9.7.0",
     "eslint": "^8.30.0",
-    "husky": "^8.0.2",
-    "lint-staged": "^13.1.0",
+    "lefthook": "^1.2.6",
     "nuxt": "3.0.0",
     "nuxt-typed-router": "^1.2.3",
     "postcss": "^8.4.20",
