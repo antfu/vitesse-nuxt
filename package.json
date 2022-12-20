@@ -26,7 +26,8 @@
     "eslint:fix": "eslint . --fix",
     "stylelint": "stylelint \"**/*.{css,scss,vue,tsx}\"",
     "stylelint:fix": "stylelint \"**/*.{css,scss,vue,tsx}\" --fix",
-    "postinstall": "nuxi prepare"
+    "postinstall": "nuxi prepare",
+    "cz": "npx cz"
   },
   "prettier": "@daotl/prettier-config",
   "dependencies": {
@@ -41,6 +42,8 @@
     "vue-i18n": "^9.2.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
     "@daotl/eslint-config-vue": "^0.3.33",
     "@nuxtjs/color-mode": "^3.2.0",
     "@pinia/nuxt": "^0.4.6",
@@ -48,6 +51,8 @@
     "@types/node": "^18.11.17",
     "@unocss/nuxt": "^0.47.6",
     "@vueuse/nuxt": "^9.7.0",
+    "commitiquette": "^1.2.1",
+    "commitizen": "^4.2.6",
     "eslint": "^8.30.0",
     "lefthook": "^1.2.6",
     "nuxt": "3.0.0",
