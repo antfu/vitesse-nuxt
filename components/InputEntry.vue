@@ -8,7 +8,7 @@ const go = (): void => {
   if (name.value) {
     void router.push({
       name: routes.hiId,
-      params: { id: encodeURIComponent(name.value as string) },
+      params: { id: name.value as string },
     })
   }
 }
@@ -19,7 +19,7 @@ const go = (): void => {
     <input
       id="input"
       v-model="name"
-      :placeholder="$t('input-name')"
+      :placeholder="$t('inputName')"
       type="text"
       autocomplete="off"
       p="x-4 y-2"

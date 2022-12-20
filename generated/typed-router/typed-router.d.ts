@@ -13,22 +13,16 @@ import type {
 } from 'vue-router'
 import type { TypedRouteList } from './__routes'
 
-export type RouteListDecl = {
-  '404': '404'
-  hiId: 'hi-id'
-  index: 'index'
-  restfulPageView: 'restful-page-view'
-}
+export type RouteListDecl = { all: 'all'; hiId: 'hi-id'; index: 'index' }
 
 export type TypedRouteParams = {
-  '404': {
-    catchAll: string | number
+  all: {
+    all: string | number
   }
   'hi-id': {
     id: string | number
   }
   index: never
-  'restful-page-view': never
 }
 
 type TypedRouteParamsStructure = {

@@ -23,12 +23,7 @@ export const useTypedRouter = (): {
 } => {
   const { $router } = useNuxtApp()
 
-  const routesList = {
-    '404': '404',
-    hiId: 'hi-id',
-    index: 'index',
-    restfulPageView: 'restful-page-view',
-  }
+  const routesList = { all: 'all', hiId: 'hi-id', index: 'index' }
 
   return {
     router: $router,

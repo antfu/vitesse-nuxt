@@ -25,23 +25,7 @@ References:
 
 ## Features
 
-- [💚 Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
-
-- 💻 [TypeGraphql](https://typegraphql.com/docs/introduction.html) + [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
-
-- 🌞 [@urql/vue](https://formidable.com/open-source/urql/docs/basics/vue/) - composable query, SSR or client mode
-  For example:
-  ```ts
-  import { usePersonQuery } from '~/graphql/generated/hello.query'
-
-  const { data, fetching, error } = usePersonQuery({
-    variables: ref({
-      personInput: {
-        name: 'Phil Xu',
-      },
-    }),
-  })
-  ```
+- [💚 Nuxt 3](https://nuxt.com/) - SSR, ESR, File-based routing, components auto importing, modules, etc.
 
 - 🌏 [i18n](https://github.com/intlify/nuxt3) customized intlify i18n - set preferred language according to browser, and save user's preferred language to cookie.
 

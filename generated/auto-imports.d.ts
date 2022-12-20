@@ -13,6 +13,7 @@ declare global {
   const setActivePinia: typeof import('pinia')['setActivePinia']
   const setMapStoreSuffix: typeof import('pinia')['setMapStoreSuffix']
   const storeToRefs: typeof import('pinia')['storeToRefs']
+  const useI18n: typeof import('vue-i18n')['useI18n']
 }
 // for vue template auto import
 import { UnwrapRef } from 'vue'
@@ -30,5 +31,6 @@ declare module 'vue' {
     readonly setActivePinia: UnwrapRef<typeof import('pinia')['setActivePinia']>
     readonly setMapStoreSuffix: UnwrapRef<typeof import('pinia')['setMapStoreSuffix']>
     readonly storeToRefs: UnwrapRef<typeof import('pinia')['storeToRefs']>
+    readonly useI18n: UnwrapRef<typeof import('vue-i18n')['useI18n']>
   }
 }

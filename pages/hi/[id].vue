@@ -30,7 +30,7 @@ definePageMeta({
         <ul>
           <li v-for="otherName in user.otherNames" :key="otherName">
             <router-link :to="`/hi/${otherName}`" replace>
-              {{ $t(otherName) }}
+              {{ otherName }}
             </router-link>
           </li>
         </ul>

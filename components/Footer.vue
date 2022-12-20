@@ -7,7 +7,7 @@ const { setLocale, locale } = useLocale()
     <NuxtLink i-carbon-campsite to="/" />
     <a
       i-carbon-logo-github
-      href="https://github.com/antfu/vitesse-nuxt3"
+      href="https://github.com/daotl/nuxt-starter"
       target="_blank"
     />
     <DarkToggle />

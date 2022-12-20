@@ -1,6 +1,6 @@
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
-const lifecycle = process.env.npm_lifecycle_event
+const _lifecycle = process.env.npm_lifecycle_event
 
 const elementPlusResolver = ElementPlusResolver({
   ssr: true,
@@ -12,6 +12,7 @@ const autoImportOpts = {
   imports: [
     // presets
     'pinia',
+    'vue-i18n',
     // custom
     {},
   ],
@@ -81,6 +82,7 @@ export default defineNuxtConfig({
   },
   experimental: {
     reactivityTransform: true,
+    inlineSSRStyles: false,
     // May disable for error:
     // https://github.com/antfu/vitesse-nuxt3/issues/42#issuecomment-1126377430
     // viteNode: false,

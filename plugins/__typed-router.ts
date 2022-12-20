@@ -7,12 +7,7 @@
 import { defineNuxtPlugin } from '#app'
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const routesList = {
-    '404': '404',
-    hiId: 'hi-id',
-    index: 'index',
-    restfulPageView: 'restful-page-view',
-  }
+  const routesList = { all: 'all', hiId: 'hi-id', index: 'index' }
 
   return {
     provide: {
