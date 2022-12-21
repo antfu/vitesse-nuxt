@@ -1,0 +1,35 @@
+ARG NODEJS_VERSION=19.3.0
+ARG BUILD_ENV=prod
+
+
+# The base for mode ENVIRONMENT=prod
+# Only install production dependencies
+FROM node:${NODEJS_VERSION}-alpine as prod
+
+LABEL maintainer="nex@daot.io"
+LABEL io.daotl.version="dev"
+LABEL io.daotl.version.isproduction="false"
+LABEL io.daotl.version.release-date="2022-12"
+
+
+# Workaround for https://github.com/alpinelinux/docker-alpine/issues/98#issuecomment-679278499
+RUN sed -i 's/https/http/' /etc/apk/repositories \
+ && apk add --no-cache bash
+
+COPY .output /nuxt/.output
+WORKDIR /nuxt
+
+# Fix: `[nuxt] [request error] [unhandled] [500] Cannot find package '@popperjs/core' imported from /nuxt/.output/server/node_modules/element-plus/es/components/popper/src/content.mjs`
+COPY node_modules/@popperjs/core /nuxt/.output/server/node_modules/@popperjs/core
+
+# The base for mode ENVIRONMENT=dev, install dev tools
+FROM prod as dev
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
+ && apk add --no-cache busybox-extras
+
+
+# Run stage
+FROM ${BUILD_ENV}
+
+EXPOSE 3000
+CMD ["node", ".output/server/index.mjs"]

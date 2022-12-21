@@ -38,13 +38,15 @@ export default defineNuxtConfig({
   // modulesDir: ['/<rootDir>/node_modules', '../../node_modules'],
   // ssr: false,
   // sourcemap: false,
-  // nitro: {
-  //   esbuild: {
-  //     options: {
-  //       minify: false,
-  //     },
-  //   },
-  // },
+  nitro: {
+    // Enable multi core handling: https://nitro.unjs.io/deploy/node#cluster-mode
+    preset: 'node-cluster',
+    //   esbuild: {
+    //     options: {
+    //       minify: false,
+    //     },
+    //   },
+  },
   // alias: {
   //   '@common': path.resolve(__dirname, '../common/src'),
   //   '@backend': path.resolve(__dirname, '../backend/src'),
