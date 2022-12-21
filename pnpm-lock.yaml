@@ -12,7 +12,6 @@ specifiers:
   '@types/node': ^18.11.17
   '@unocss/nuxt': ^0.47.6
   '@vueuse/nuxt': ^9.7.0
-  class-validator: ^0.14.0
   commitiquette: ^1.2.1
   commitizen: ^4.2.6
   element-plus: ^2.2.27
@@ -43,7 +42,6 @@ specifiers:
 dependencies:
   '@iconify-json/carbon': 1.1.11
   '@iconify-json/twemoji': 1.1.7
-  class-validator: 0.14.0
   element-plus: 2.2.27_vue@3.2.45
   pinia: 2.0.28_prq2uz4lho2pwp6irk4cfkrxwu
   reflect-metadata: 0.1.13
@@ -1840,10 +1838,6 @@ packages:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
     dev: true
 
-  /@types/validator/13.7.10:
-    resolution: {integrity: sha512-t1yxFAR2n0+VO6hd/FJ9F2uezAZVWHLmpmlJzm1eX03+H7+HsuTAp7L8QJs+2pQCfWkP1+EXsGK9Z9v7o/qPVQ==}
-    dev: false
-
   /@types/web-bluetooth/0.0.16:
     resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==}
 
@@ -3142,14 +3136,6 @@ packages:
     resolution: {integrity: sha512-2CpRNYmImPx+RXKLq6jko/L07phmS9I02TyqkcNU20GCF/GgaWvc58hPtjxDX8lPpkdwc9sNh72V9k00S7ezog==}
     engines: {node: '>=8'}
     dev: true
-
-  /class-validator/0.14.0:
-    resolution: {integrity: sha512-ct3ltplN8I9fOwUd8GrP8UQixwff129BkEtuWDKL5W45cQuLd19xqmTLu5ge78YDm/fdje6FMt0hGOhl0lii3A==}
-    dependencies:
-      '@types/validator': 13.7.10
-      libphonenumber-js: 1.10.14
-      validator: 13.7.0
-    dev: false
 
   /clean-regexp/1.0.0:
     resolution: {integrity: sha1-jffHquUf02h06PjQW5GAvBGj/tc=}
@@ -6210,10 +6196,6 @@ packages:
       prelude-ls: 1.2.1
       type-check: 0.4.0
     dev: true
-
-  /libphonenumber-js/1.10.14:
-    resolution: {integrity: sha512-McGS7GV/WjJ2KjfOGhJU1oJn29RYeo7Q+RpANRbUNMQ9gj5XArpbjurSuyYPTejFwbaUojstQ4XyWCrAzGOUXw==}
-    dev: false
 
   /lilconfig/2.0.6:
     resolution: {integrity: sha512-9JROoBW7pobfsx+Sq2JsASvCo6Pfo6WWoUW79HuB1BCoBXD4PLWJPqDF6fNj67pqBYTbAHkE57M1kS/+L1neOg==}
@@ -9536,11 +9518,6 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /validator/13.7.0:
-    resolution: {integrity: sha512-nYXQLCBkpJ8X6ltALua9dRrZDHVYxjJ1wgskNt1lH9fzGjs3tgojGSCBjmEPwkWS1y29+DrizMTW19Pr9uB2nw==}
-    engines: {node: '>= 0.10'}
-    dev: false
-
   /vfile-location/4.0.1:
     resolution: {integrity: sha512-JDxPlTbZrZCQXogGheBHjbRWjESSPEak770XwWPfw5mTc1v1nWGLB/apzZxsx8a0SJVfF8HK8ql8RD308vXRUw==}
     dependencies:
@@ -10021,7 +9998,7 @@ packages:
     dev: true
 
   github.com/daotl/unplugin-auto-import/6b2bbc40c928340fb473b56d91240d9d617665c4:
-    resolution: {tarball: https://codeload.github.com/daotl/unplugin-auto-import/tar.gz/6b2bbc40c928340fb473b56d91240d9d617665c4}
+    resolution: {commit: 6b2bbc40c928340fb473b56d91240d9d617665c4, repo: git+ssh://git@github.com/daotl/unplugin-auto-import.git, type: git}
     name: unplugin-auto-import
     version: 0.12.1
     engines: {node: '>=14'}
@@ -10045,7 +10022,7 @@ packages:
     dev: true
 
   github.com/daotl/unplugin-vue-components/75d581e694b62072d3ab7dcae496aff91432f74b_vue@3.2.45:
-    resolution: {tarball: https://codeload.github.com/daotl/unplugin-vue-components/tar.gz/75d581e694b62072d3ab7dcae496aff91432f74b}
+    resolution: {commit: 75d581e694b62072d3ab7dcae496aff91432f74b, repo: git+ssh://git@github.com/daotl/unplugin-vue-components.git, type: git}
     id: github.com/daotl/unplugin-vue-components/75d581e694b62072d3ab7dcae496aff91432f74b
     name: unplugin-vue-components
     version: 0.22.12

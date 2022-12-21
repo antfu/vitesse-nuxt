@@ -33,7 +33,6 @@
   "dependencies": {
     "@iconify-json/carbon": "^1.1.11",
     "@iconify-json/twemoji": "^1.1.7",
-    "class-validator": "^0.14.0",
     "element-plus": "^2.2.27",
     "pinia": "^2.0.28",
     "reflect-metadata": "^0.1.13",
