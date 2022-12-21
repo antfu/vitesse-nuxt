@@ -12,6 +12,7 @@ const time = useTimeAgo(
         String(n).match(/\d/) ? t('timeAgo', [n]) : String(n),
       future: (n: number | string) =>
         String(n).match(/\d/) ? t('inTime', [n]) : String(n),
+      invalid: 'invalid',
       second: (n: number | string) => `${n} ${t(`second${n > 1 ? 's' : ''}`)}`,
       minute: (n: number | string) => `${n} ${t(`minute${n > 1 ? 's' : ''}`)}`,
       hour: (n: number | string) => `${n} ${t(`hour${n > 1 ? 's' : ''}`)}`,

@@ -49,7 +49,7 @@
     "@stylelint/postcss-css-in-js": "^0.38.0",
     "@types/node": "^18.11.17",
     "@unocss/nuxt": "^0.47.6",
-    "@vueuse/nuxt": "^9.7.0",
+    "@vueuse/nuxt": "^9.8.2",
     "commitiquette": "^1.2.1",
     "commitizen": "^4.2.6",
     "eslint": "^8.30.0",
