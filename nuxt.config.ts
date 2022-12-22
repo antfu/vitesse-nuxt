@@ -41,6 +41,13 @@ export default defineNuxtConfig({
   nitro: {
     // Enable multi core handling: https://nitro.unjs.io/deploy/node#cluster-mode
     preset: 'node-cluster',
+    // Proxy backend APIs
+    devProxy: {
+      '/api': {
+        target: 'http://local.dev:8080/api',
+        changeOrigin: true,
+      },
+    },
     //   esbuild: {
     //     options: {
     //       minify: false,
@@ -132,16 +139,6 @@ export default defineNuxtConfig({
   //   },
   // },
   // vite: {
-  //   server: {
-  //     proxy: {
-  //       // https://github.com/nuxt/framework/discussions/1223#discussioncomment-3113141
-  //       '/api': {
-  //         target: 'http://local.dev:8080', // process.env.API_URL,
-  //         changeOrigin: true,
-  //         rewrite: (path) => path,
-  //       },
-  //     },
-  //   },
   //   plugins: [],
   // },
 
