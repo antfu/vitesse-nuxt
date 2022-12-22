@@ -99,7 +99,6 @@ pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 npm run dev
 ```
 Website: http://127.0.0.1:3000
-Graphql Playground: http://127.0.0.1:3000/api/playground
 
 ### Deploy
 

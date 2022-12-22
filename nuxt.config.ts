@@ -75,12 +75,7 @@ export default defineNuxtConfig({
   //   '@backend': path.resolve(__dirname, '../backend/src'),
   // },
   imports: {
-    dirs: [
-      'generated/typed-router',
-      'graphql/generated/ops/queries',
-      'graphql/generated/ops/mutations',
-      'graphql/generated/ops/subscriptions',
-    ],
+    dirs: ['generated/typed-router'],
   },
   modules: [
     'nuxt-typed-router',
@@ -94,7 +89,6 @@ export default defineNuxtConfig({
     // Replaced by `plugin/i18n.ts` for now for this issue:
     // https://github.com/intlify/nuxt3/issues/68#issuecomment-1139435935
     // '@intlify/nuxt3',
-    // 'nuxt-graphql-codegen'
   ],
   build: {
     transpile: [
@@ -117,7 +111,6 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
   ignore: [
-    'graphql/generated/**',
     'generated/typed-router',
     ...(process.env.NODE_ENV !== 'development'
       ? ['pages/**/*.ts', 'pages/**/components']
