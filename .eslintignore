@@ -1,4 +1,5 @@
 docker
+k8s
 dist
 node_modules
 .output
