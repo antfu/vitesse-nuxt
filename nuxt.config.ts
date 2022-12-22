@@ -1,7 +1,5 @@
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
-const _lifecycle = process.env.npm_lifecycle_event
-
 const apiBase = '' // '/nuxt-starter'
 const runtimeConfig = {
   // The private keys which are only available within server-side
@@ -16,6 +14,8 @@ const runtimeConfig = {
     },
   },
 }
+
+// const lifecycle = process.env.npm_lifecycle_event
 
 const elementPlusResolver = ElementPlusResolver({
   ssr: true,

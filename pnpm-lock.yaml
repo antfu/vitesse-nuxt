@@ -27,7 +27,6 @@ importers:
       postcss-html: ^1.5.0
       postcss-syntax: ^0.36.2
       prettier: ^2.8.1
-      reflect-metadata: ^0.1.13
       rxjs: ^7.8.0
       sass: ^1.57.1
       stylelint: ^14.16.0
@@ -46,7 +45,6 @@ importers:
       '@iconify-json/twemoji': 1.1.7
       element-plus: 2.2.27_vue@3.2.45
       pinia: 2.0.28_prq2uz4lho2pwp6irk4cfkrxwu
-      reflect-metadata: 0.1.13
       rxjs: 7.8.0
       vue: 3.2.45
       vue-i18n: 9.2.2_vue@3.2.45
@@ -8478,10 +8476,6 @@ packages:
       redis-errors: 1.2.0
     dev: true
 
-  /reflect-metadata/0.1.13:
-    resolution: {integrity: sha512-Ts1Y/anZELhSsjMcU605fU9RE4Oi3p5ORujwbIKXfWa+0Zxs510Qrmrce5/Jowq3cHSZSJqBjypxmHarc+vEWg==}
-    dev: false
-
   /regexp-tree/0.1.24:
     resolution: {integrity: sha512-s2aEVuLhvnVJW6s/iPgEGK6R+/xngd2jNQ+xy4bXNDKxZKJH6jpPHY6kVeVv1IeLCHgswRj+Kl3ELaDjG6V1iw==}
     hasBin: true
@@ -10283,7 +10277,7 @@ packages:
     dev: true
 
   github.com/daotl/unplugin-auto-import/6b2bbc40c928340fb473b56d91240d9d617665c4:
-    resolution: {tarball: https://codeload.github.com/daotl/unplugin-auto-import/tar.gz/6b2bbc40c928340fb473b56d91240d9d617665c4}
+    resolution: {commit: 6b2bbc40c928340fb473b56d91240d9d617665c4, repo: git+ssh://git@github.com/daotl/unplugin-auto-import.git, type: git}
     name: unplugin-auto-import
     version: 0.12.1
     engines: {node: '>=14'}
@@ -10307,7 +10301,7 @@ packages:
     dev: true
 
   github.com/daotl/unplugin-vue-components/75d581e694b62072d3ab7dcae496aff91432f74b_vue@3.2.45:
-    resolution: {tarball: https://codeload.github.com/daotl/unplugin-vue-components/tar.gz/75d581e694b62072d3ab7dcae496aff91432f74b}
+    resolution: {commit: 75d581e694b62072d3ab7dcae496aff91432f74b, repo: git+ssh://git@github.com/daotl/unplugin-vue-components.git, type: git}
     id: github.com/daotl/unplugin-vue-components/75d581e694b62072d3ab7dcae496aff91432f74b
     name: unplugin-vue-components
     version: 0.22.12

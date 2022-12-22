@@ -40,7 +40,6 @@
     "@iconify-json/twemoji": "^1.1.7",
     "element-plus": "^2.2.27",
     "pinia": "^2.0.28",
-    "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0",
     "vue": "^3.2.45",
     "vue-i18n": "^9.2.2"
