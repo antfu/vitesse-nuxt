@@ -4,13 +4,13 @@
   "private": true,
   "packageManager": "pnpm@7.9.0",
   "description": "A Nuxt 3 + TypeScript starter template",
-  "homepage": "https://github.com/daotl/fes-starter",
+  "homepage": "https://github.com/daotl/nuxt-starter",
   "repository": {
     "type": "git",
     "url": "https://github.com/daotl/nuxt-starter.git"
   },
   "bugs": {
-    "url": "https://github.com/daotl/fes-starter/issues"
+    "url": "https://github.com/daotl/nuxt-starter/issues"
   },
   "scripts": {
     "dev": "nuxi dev",

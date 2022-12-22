@@ -1,0 +1,24 @@
+{
+  "name": "@daotl/k8s",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "prettier": "@daotl/prettier-config",
+  "dependencies": {
+    "@pulumi/kubernetes": "^3.23.1",
+    "@pulumi/kubernetesx": "^0.1.6",
+    "@pulumi/pulumi": "^3.50.2",
+    "deepmerge": "^4.2.2"
+  },
+  "devDependencies": {
+    "@daotl/eslint-config": "^0.3.33",
+    "@daotl/tsconfig": "^0.1.2",
+    "@types/node": "^18.11.17",
+    "eslint": "^8.30.0",
+    "prettier": "^2.8.1",
+    "type-fest": "^3.4.0",
+    "typescript": "^4.9.4"
+  }
+}

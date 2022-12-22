@@ -1,0 +1,5 @@
+config:
+  nuxt-starter:api:
+    restHost: https://rest
+    wsHost: https://ws
+  nuxt-starter:imageTag: latest

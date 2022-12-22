@@ -1,0 +1,6 @@
+pre-commit:
+  parallel: true
+  commands:
+    k8s-eslint:
+      root: k8s/
+      run: npx eslint --cache --fix {staged_files} && git add {staged_files}
