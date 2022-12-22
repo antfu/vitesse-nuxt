@@ -29,6 +29,11 @@
     "postinstall": "nuxi prepare",
     "cz": "npx cz"
   },
+  "config": {
+    "commitizen": {
+      "path": "commitiquette"
+    }
+  },
   "prettier": "@daotl/prettier-config",
   "dependencies": {
     "@iconify-json/carbon": "^1.1.11",
