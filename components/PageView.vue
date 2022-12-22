@@ -1,7 +1,12 @@
 <script setup lang="ts">
+// const config = useRuntimeConfig()
 const { t } = useI18n()
 
-const { data } = await useFetch('/api/pageview' as const)
+const { data } = await useFetch('/api/pageview')
+// const { data } = await useFetch(
+//   `${config.public.backends.restApiBaseUrl}/pageview`,
+// )
+
 const time = useTimeAgo(
   computed(() => data.value?.startAt ?? new Date()),
   {

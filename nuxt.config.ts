@@ -2,6 +2,21 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 const _lifecycle = process.env.npm_lifecycle_event
 
+const apiBase = '' // '/nuxt-starter'
+const runtimeConfig = {
+  // The private keys which are only available within server-side
+  apiSecret: '123',
+  // Keys within public, will be also exposed to the client-side
+  public: {
+    // When adding apiBase to the runtimeConfig.public, Nuxt adds it to each page payload. We can universally access apiBase in both server and browser.
+    // apiBase,
+    backends: {
+      restApiBaseUrl: `${apiBase}/api`,
+      wsApiBaseUrl: `${apiBase}/ws`,
+    },
+  },
+}
+
 const elementPlusResolver = ElementPlusResolver({
   ssr: true,
   directives: false,
@@ -27,6 +42,7 @@ const vueComponentsOpts = {
 }
 
 export default defineNuxtConfig({
+  runtimeConfig,
   // Without this option, `rootDir` was incorrectly set to `web/frontend/web-frontend` because of pnpm workspace
   // rootDir: '.',
   /**
