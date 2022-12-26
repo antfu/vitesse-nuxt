@@ -89,6 +89,16 @@ export default defineNuxtConfig({
     // Replaced by `plugin/i18n.ts` for now for this issue:
     // https://github.com/intlify/nuxt3/issues/68#issuecomment-1139435935
     // '@intlify/nuxt3',
+
+    // Temporary workaround for `*.ts` files in `pages/` causing errors related to auto route generation
+    // https://github.com/nuxt/framework/issues/6920#issuecomment-1232596227
+    (_, nuxt): void => {
+      if (process.env.NODE_ENV === 'development') {
+        nuxt.options.extensions = nuxt.options.extensions.filter(
+          (ext) => ext !== '.ts',
+        )
+      }
+    },
   ],
   build: {
     transpile: [
@@ -135,7 +145,11 @@ export default defineNuxtConfig({
   },
   css: ['~/styles/index.scss'],
   unocss: {
-    preflight: true,
+    attributify: true,
+    icons: true,
+    // https://github.com/unocss/unocss/issues/932
+    // @unocss/reset/tailwind.css is inserted after the Element UI style, causing button background to be transparent
+    // preflight: true,
   },
   colorMode: {
     classSuffix: '',
