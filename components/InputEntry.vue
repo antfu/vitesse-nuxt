@@ -1,13 +1,11 @@
 <script setup lang="ts">
-// import { useTypedRouter } from '~/generated/typed-router'
-
-const { router, routes } = useTypedRouter()
+const router = useRouter()
 const name = ref('')
 
 const go = (): void => {
   if (name.value) {
     void router.push({
-      name: routes.hiId,
+      name: 'hi-id',
       params: { id: name.value as string },
     })
   }

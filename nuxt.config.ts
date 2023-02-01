@@ -139,9 +139,9 @@ export default defineNuxtConfig({
   // https://github.com/victorgarciaesgi/nuxt-typed-router
   nuxtTypedRouter: {
     // Output directory where you cant the files to be saved
-    outDir: './generated/typed-router',
+    // outDir: './generated/typed-router',
     // Name of the routesNames object
-    // routesObjectName: 'routerPagesNames',
+    // routesObjectName: 'routerPagesNames'
   },
   css: ['~/styles/index.scss'],
   unocss: {

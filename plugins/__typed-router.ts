@@ -12,7 +12,7 @@ export default defineNuxtPlugin(() => {
 
   return {
     provide: {
-      typedRouter: router as TypedRouter,
+      typedRouter: router,
       routesList,
     },
   }
