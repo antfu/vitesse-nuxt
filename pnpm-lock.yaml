@@ -37,7 +37,6 @@ importers:
       stylelint-config-recommended-vue: ^1.4.0
       typescript: ^4.9.5
       unplugin-auto-import: git://github.com/daotl/unplugin-auto-import#6b2bbc40c928340fb473b56d91240d9d617665c4
-      unplugin-vue-components: git://github.com/daotl/unplugin-vue-components#75d581e694b62072d3ab7dcae496aff91432f74b
       vite: ^4.0.4
       vue: ^3.2.45
       vue-i18n: ^9.2.2
@@ -79,7 +78,6 @@ importers:
       stylelint-config-recommended-vue: 1.4.0_kbto3rg3njmczth2rrsgfnlsqa
       typescript: 4.9.5
       unplugin-auto-import: github.com/daotl/unplugin-auto-import/6b2bbc40c928340fb473b56d91240d9d617665c4
-      unplugin-vue-components: github.com/daotl/unplugin-vue-components/75d581e694b62072d3ab7dcae496aff91432f74b_vue@3.2.45
       vite: 4.0.4_f5vcjb3akvjdur4ffzogu2hewu
       vue-tsc: 1.0.24_typescript@4.9.5
 
@@ -11484,7 +11482,7 @@ packages:
     dev: true
 
   github.com/daotl/unplugin-auto-import/6b2bbc40c928340fb473b56d91240d9d617665c4:
-    resolution: {tarball: https://codeload.github.com/daotl/unplugin-auto-import/tar.gz/6b2bbc40c928340fb473b56d91240d9d617665c4}
+    resolution: {commit: 6b2bbc40c928340fb473b56d91240d9d617665c4, repo: git+ssh://git@github.com/daotl/unplugin-auto-import.git, type: git}
     name: unplugin-auto-import
     version: 0.12.1
     engines: {node: '>=14'}
@@ -11505,36 +11503,4 @@ packages:
       unplugin: 1.0.1
     transitivePeerDependencies:
       - rollup
-    dev: true
-
-  github.com/daotl/unplugin-vue-components/75d581e694b62072d3ab7dcae496aff91432f74b_vue@3.2.45:
-    resolution: {tarball: https://codeload.github.com/daotl/unplugin-vue-components/tar.gz/75d581e694b62072d3ab7dcae496aff91432f74b}
-    id: github.com/daotl/unplugin-vue-components/75d581e694b62072d3ab7dcae496aff91432f74b
-    name: unplugin-vue-components
-    version: 0.22.12
-    engines: {node: '>=14'}
-    peerDependencies:
-      '@babel/parser': ^7.15.8
-      '@nuxt/kit': ^3.0.0
-      vue: 2 || 3
-    peerDependenciesMeta:
-      '@babel/parser':
-        optional: true
-      '@nuxt/kit':
-        optional: true
-    dependencies:
-      '@antfu/utils': 0.7.2
-      '@rollup/pluginutils': 5.0.2
-      chokidar: 3.5.3
-      debug: 4.3.4
-      fast-glob: 3.2.12
-      local-pkg: 0.4.3
-      magic-string: 0.27.0
-      minimatch: 5.1.1
-      resolve: 1.22.1
-      unplugin: 1.0.1
-      vue: 3.2.45
-    transitivePeerDependencies:
-      - rollup
-      - supports-color
     dev: true

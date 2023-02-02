@@ -27,10 +27,6 @@ const autoImportOpts = {
   vueTemplate: true,
 }
 
-const vueComponentsOpts = {
-  dts: './generated/vue-components.d.ts',
-}
-
 export default defineNuxtConfig({
   runtimeConfig,
   // Without this option, `rootDir` was incorrectly set to `web/frontend/web-frontend` because of pnpm workspace
@@ -71,7 +67,6 @@ export default defineNuxtConfig({
     'nuxt-typed-router',
     // https://github.com/antfu/unplugin-auto-import
     ['unplugin-auto-import/nuxt', autoImportOpts],
-    ['unplugin-vue-components/nuxt', vueComponentsOpts],
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
