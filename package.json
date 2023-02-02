@@ -47,6 +47,7 @@
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
     "@daotl/eslint-config-vue": "^0.3.33",
+    "@element-plus/nuxt": "^1.0.3",
     "@iconify-json/carbon": "^1.1.14",
     "@iconify-json/twemoji": "^1.1.10",
     "@nuxtjs/color-mode": "^3.2.0",

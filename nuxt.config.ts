@@ -1,5 +1,3 @@
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-
 const apiBase = '' // '/nuxt-starter'
 const runtimeConfig = {
   // The private keys which are only available within server-side
@@ -16,12 +14,6 @@ const runtimeConfig = {
 }
 
 // const lifecycle = process.env.npm_lifecycle_event
-
-const elementPlusResolver = ElementPlusResolver({
-  ssr: true,
-  directives: false,
-})
-
 const autoImportOpts = {
   // global imports to register
   imports: [
@@ -31,13 +23,11 @@ const autoImportOpts = {
     // custom
     {},
   ],
-  resolvers: [elementPlusResolver],
   dts: './generated/auto-imports.d.ts',
   vueTemplate: true,
 }
 
 const vueComponentsOpts = {
-  resolvers: [elementPlusResolver],
   dts: './generated/vue-components.d.ts',
 }
 
@@ -86,6 +76,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
+    '@element-plus/nuxt',
     // Replaced by `plugin/i18n.ts` for now for this issue:
     // https://github.com/intlify/nuxt3/issues/68#issuecomment-1139435935
     // '@intlify/nuxt3',
@@ -102,8 +93,6 @@ export default defineNuxtConfig({
   ],
   build: {
     transpile: [
-      // https://github.com/element-plus/element-plus-nuxt-starter/commit/09c84c050fae55600957cd89dba143ba8363fed0#diff-5977891bf10802cdd3cde62f0355105a1662e65b02ae4fb404a27bb0f5f53a07
-      'element-plus/es',
       // Fix error: "[nuxt] [request error] [unhandled] [500] Cannot find module './internal/Observable'"
       // https://github.com/nuxt/framework/discussions/7772#discussioncomment-3970252
       'rxjs',
