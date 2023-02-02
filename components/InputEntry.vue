@@ -1,10 +1,9 @@
 <script setup lang="ts">
-const router = useRouter()
 const name = ref('')
 
 const go = (): void => {
   if (name.value) {
-    void router.push({
+    void navigateTo({
       name: 'hi-id',
       params: { id: name.value as string },
     })
