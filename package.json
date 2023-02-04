@@ -4,10 +4,12 @@
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
+    "dev:pwa": "VITE_PLUGIN_PWA=true nuxi dev",
     "start": "node .output/server/index.mjs",
     "lint": "eslint .",
     "postinstall": "nuxi prepare",
-    "generate": "nuxi generate"
+    "generate": "nuxi generate",
+    "start:generate": "npx serve .output/public"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.35.0",
@@ -16,10 +18,14 @@
     "@nuxtjs/color-mode": "^3.2.0",
     "@pinia/nuxt": "^0.4.6",
     "@unocss/nuxt": "^0.49.1",
+    "@vite-pwa/nuxt": "^0.0.3",
     "@vueuse/nuxt": "^9.11.1",
     "eslint": "^8.33.0",
     "nuxt": "^3.1.1",
     "pinia": "^2.0.29",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.4",
+    "vite-plugin-pwa": "^0.14.1",
+    "workbox-build": "^6.5.4",
+    "workbox-window": "^6.5.4"
   }
 }
