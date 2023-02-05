@@ -81,9 +81,6 @@ export default defineNuxtConfig({
       globPatterns: ['**/*.{js,css,html,txt,png,ico,svg}'],
       navigateFallbackDenylist: [/^\/api\//],
       navigateFallback: '/',
-      // clientsClaim and skipWaiting will not be required in 0.0.4, I'll send a PR to fix it
-      clientsClaim: true,
-      skipWaiting: true,
       cleanupOutdatedCaches: true,
       runtimeCaching: [
         {
