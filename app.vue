@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { appName } from '~/constants'
+
 useHead({
-  title: 'Vitesse Nuxt 3',
+  title: appName,
 })
 </script>
 
