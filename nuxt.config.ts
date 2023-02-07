@@ -1,3 +1,5 @@
+import type { NuxtPage } from '@nuxt/schema'
+
 const apiBase = '' // '/nuxt-starter'
 const runtimeConfig = {
   // The private keys which are only available within server-side
@@ -104,12 +106,6 @@ export default defineNuxtConfig({
     strict: true,
     typeCheck: true,
   },
-  ignore: [
-    'generated/typed-router',
-    ...(process.env.NODE_ENV !== 'development'
-      ? ['pages/**/*.ts', 'pages/**/components']
-      : []),
-  ],
   vue: {
     compilerOptions: {
       directiveTransforms: {
@@ -144,6 +140,28 @@ export default defineNuxtConfig({
 
   // https://github.com/nuxt/framework/issues/6204#issuecomment-1201398080
   hooks: {
+    // Improved pages module configuration
+    // https://github.com/nuxt/nuxt/issues/12333
+    'pages:extend': function (pages) {
+      function removePagesMatching(
+        pattern: RegExp,
+        pages: NuxtPage[] = [],
+      ): void {
+        const pagesToRemove = []
+        for (const page of pages) {
+          if (pattern.test(page.file)) {
+            pagesToRemove.push(page)
+          } else {
+            removePagesMatching(pattern, page.children)
+          }
+        }
+
+        for (const page of pagesToRemove) {
+          pages.splice(pages.indexOf(page), 1)
+        }
+      }
+      removePagesMatching(/pages(.*)\/components\/|\.ts$/, pages)
+    },
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     'vite:extendConfig': function (config: any, { isServer }: any) {
       if (isServer) {
