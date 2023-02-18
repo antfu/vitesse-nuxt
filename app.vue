@@ -1,15 +1,13 @@
 <script setup lang="ts">
+import { appName } from '~/constants'
+
 useHead({
-  title: 'Vitesse Nuxt 3',
-  link: [
-    {
-      rel: 'icon', type: 'image/png', href: '/nuxt.png',
-    },
-  ],
+  title: appName,
 })
 </script>
 
 <template>
+  <VitePwaManifest />
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>

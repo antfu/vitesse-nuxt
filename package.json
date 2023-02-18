@@ -4,22 +4,28 @@
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
+    "dev:pwa": "VITE_PLUGIN_PWA=true nuxi dev",
     "start": "node .output/server/index.mjs",
     "lint": "eslint .",
     "postinstall": "nuxi prepare",
-    "generate": "nuxi generate"
+    "generate": "nuxi generate",
+    "start:generate": "npx serve .output/public"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.35.1",
-    "@iconify-json/carbon": "^1.1.14",
-    "@iconify-json/twemoji": "^1.1.10",
+    "@antfu/eslint-config": "^0.35.2",
+    "@iconify-json/carbon": "^1.1.15",
+    "@iconify-json/twemoji": "^1.1.11",
     "@nuxtjs/color-mode": "^3.2.0",
     "@pinia/nuxt": "^0.4.6",
-    "@unocss/nuxt": "^0.49.4",
-    "@vueuse/nuxt": "^9.12.0",
-    "eslint": "^8.33.0",
-    "nuxt": "^3.1.2",
+    "@unocss/nuxt": "^0.49.7",
+    "@vite-pwa/nuxt": "^0.0.5",
+    "@vueuse/nuxt": "^9.13.0",
+    "eslint": "^8.34.0",
+    "nuxt": "^3.2.2",
     "pinia": "^2.0.30",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "vite-plugin-pwa": "^0.14.4",
+    "workbox-build": "^6.5.4",
+    "workbox-window": "^6.5.4"
   }
 }
