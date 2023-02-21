@@ -1,8 +1,17 @@
+<script setup lang="ts">
+const online = useOnline()
+</script>
+
 <template>
   <div>
     <Logos mb-6 />
     <Suspense>
-      <PageView />
+      <ClientOnly>
+        <PageView v-if="online" />
+        <div v-else text-gray:80>
+          You're offline
+        </div>
+      </ClientOnly>
       <template #fallback>
         <div op50 italic>
           <span animate-pulse>Loading...</span>
