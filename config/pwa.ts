@@ -35,10 +35,35 @@ export const pwa: ModuleOptions = {
   },
   workbox: {
     globPatterns: ['**/*.{js,css,html,txt,png,ico,svg}'],
-    navigateFallbackDenylist: [/^\/api\//],
     navigateFallback: '/',
     cleanupOutdatedCaches: true,
     runtimeCaching: [
+      {
+        urlPattern: ({ sameOrigin, url }) => sameOrigin && url.pathname.startsWith('/api/'),
+        handler: 'NetworkFirst',
+        options: {
+          cacheName: 'api-cache',
+          expiration: {
+            maxEntries: 100,
+          },
+          cacheableResponse: {
+            statuses: [0, 200],
+          },
+        },
+      },
+      {
+        urlPattern: ({ sameOrigin, url }) => sameOrigin && url.pathname.startsWith('/hi/'),
+        handler: 'NetworkFirst',
+        options: {
+          cacheName: 'hi-cache',
+          expiration: {
+            maxEntries: 100,
+          },
+          cacheableResponse: {
+            statuses: [0, 200],
+          },
+        },
+      },
       {
         urlPattern: /^https:\/\/fonts.googleapis.com\/.*/i,
         handler: 'CacheFirst',

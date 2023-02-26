@@ -1,14 +1,15 @@
 <script setup lang="ts">
+definePageMeta({
+  layout: 'home',
+})
+
 const route = useRoute()
 const user = useUserStore()
 const name = route.params.id
 
 watchEffect(() => {
-  user.setNewName(route.params.id as string)
-})
-
-definePageMeta({
-  layout: 'home',
+  const id = route.params.id as string
+  id && user.setNewName(id)
 })
 </script>
 
