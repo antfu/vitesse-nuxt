@@ -22,6 +22,16 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+  routeRules: {
+    // Static generation
+    '/': { prerender: true },
+    '/sw.js': {
+      headers: {
+        'Content-Type': 'application/javascript; charset=UTF-8',
+        'Cache-Control': 'public, max-age=0, must-revalidate',
+      },
+    },
+  },
   nitro: {
     esbuild: {
       options: {
