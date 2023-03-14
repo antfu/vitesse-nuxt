@@ -8,4 +8,4 @@ node-jiti
 .eslintcache
 .history
 .serverless
-.idea
+.idea/

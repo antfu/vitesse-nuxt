@@ -37,11 +37,11 @@ References:
 
 - 😃 Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
 
-- 🔥 The `<script setup>` syntax
+- 🔥 The `<script setup>` syntax.
 
-- 🍍 [State Management via Pinia](https://pinia.esm.dev), see [./composables/user.ts](./composables/user.ts)
+- 🍍 [State Management via Pinia](https://pinia.esm.dev), see [./composables/user.ts](./composables/user.ts).
 
-- 📑 [Layout system](./layouts)
+- 📑 [Layout system](./layouts).
 
 - 🛠 [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs
 
@@ -49,9 +49,12 @@ References:
 
 - 📥 APIs auto importing - for Composition API, VueUse and custom composables.
 
-- 🏎 Zero-config cloud functions and deploy
+- 🏎 Zero-config cloud functions and deploy.
 
-- 🦾 TypeScript, of course
+- 🦾 TypeScript, of course.
+
+- 📲 [PWA](https://github.com/vite-pwa/nuxt) with offline support and auto update behavior.
+
 
 ## Plugins
 
@@ -61,6 +64,7 @@ References:
 - [ColorMode](https://github.com/nuxt-community/color-mode-module) - dark and Light mode with auto detection made easy with Nuxt.
 - [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine.
 - [Pinia](https://pinia.esm.dev/) - intuitive, type safe, light and flexible Store for Vue.
+- [VitePWA](https://github.com/vite-pwa/nuxt) - zero-config PWA Plugin for Nuxt 3.
 
 ## IDE
 
