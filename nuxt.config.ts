@@ -1,7 +1,7 @@
+import type { NuxtPage } from '@nuxt/schema'
+
 import { pwa } from './config/pwa'
 import { appDescription } from './constants/index'
-
-import type { NuxtPage } from '@nuxt/schema'
 
 const apiBase = '' // '/nuxt-starter'
 const runtimeConfig = {
@@ -54,6 +54,16 @@ export default defineNuxtConfig({
         target: 'http://local.dev:8080/api',
         changeOrigin: true,
       },
+    },
+    esbuild: {
+      options: {
+        target: 'esnext',
+      },
+    },
+    prerender: {
+      crawlLinks: false,
+      routes: ['/'],
+      ignore: ['/hi'],
     },
     //   esbuild: {
     //     options: {
@@ -134,18 +144,6 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
-  nitro: {
-    esbuild: {
-      options: {
-        target: 'esnext',
-      },
-    },
-    prerender: {
-      crawlLinks: false,
-      routes: ['/'],
-      ignore: ['/hi'],
-    },
-  },
   app: {
     head: {
       viewport: 'width=device-width,initial-scale=1',
@@ -157,7 +155,10 @@ export default defineNuxtConfig({
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: appDescription },
-        { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
+        {
+          name: 'apple-mobile-web-app-status-bar-style',
+          content: 'black-translucent',
+        },
       ],
     },
   },

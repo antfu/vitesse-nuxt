@@ -1,5 +1,7 @@
 <script setup lang="ts">
 // const config = useRuntimeConfig()
+import type { MaybeComputedRef } from '@vueuse/shared'
+
 const { t } = useI18n()
 
 const { data } = await useFetch('/api/pageview')
@@ -8,7 +10,9 @@ const { data } = await useFetch('/api/pageview')
 // )
 
 const time = useTimeAgo(
-  computed(() => data.value?.startAt ?? new Date()),
+  computed(
+    () => data.value?.startAt ?? new Date(),
+  ) as unknown as MaybeComputedRef<number>,
   {
     fullDateFormatter: (date: Date) => date.toLocaleDateString(),
     messages: {
