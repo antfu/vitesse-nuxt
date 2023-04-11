@@ -1,20 +1,18 @@
 <template>
-  <div inline-flex text-2xl font-300 cursor-default>
+  <div inline-flex cursor-default text-2xl font-300>
     <div flex flex-col children:mx-auto>
-      <img w-18 h-18 inline-block src="/nuxt.svg">
-      <span text-green5 mt--2>Nuxt 3</span>
+      <img inline-block h-18 w-18 src="/nuxt.svg">
+      <span mt--2 text-green5>Nuxt 3</span>
     </div>
     <div
       text="3xl gray4"
       m="x-4 y-auto"
-      transition-all-500
-      transform
-      hover:rotate-135
-      i-carbon-add
+
+      i-carbon-add transform transition-all-500 hover:rotate-135
     />
     <div flex flex-col children:mx-auto>
-      <img w-18 h-18 inline-block src="/vite.png">
-      <span text-purple5 mt--2>Vitesse</span>
+      <img inline-block h-18 w-18 src="/vite.png">
+      <span mt--2 text-purple5>Vitesse</span>
     </div>
   </div>
 </template>
