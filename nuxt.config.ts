@@ -8,20 +8,23 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
-    '@nuxt/devtools',
   ],
+
   experimental: {
     // when using generate, payload js assets included in sw precache manifest
     // but missing on offline, disabling extraction it until fixed
     payloadExtraction: false,
     inlineSSRStyles: false,
   },
+
   css: [
     '@unocss/reset/tailwind.css',
   ],
+
   colorMode: {
     classSuffix: '',
   },
+
   nitro: {
     esbuild: {
       options: {
@@ -34,6 +37,7 @@ export default defineNuxtConfig({
       ignore: ['/hi'],
     },
   },
+
   app: {
     head: {
       viewport: 'width=device-width,initial-scale=1',
@@ -49,5 +53,10 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   pwa,
+
+  devtools: {
+    enabled: true,
+  },
 })
