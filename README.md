@@ -62,6 +62,7 @@ We recommend using [VS Code](https://code.visualstudio.com/) with [Volar](https:
 - [vitesse-lite](https://github.com/antfu/vitesse-lite) - Lightweight version of Vitesse
 - [vitesse-nuxt-bridge](https://github.com/antfu/vitesse-nuxt-bridge) - Vitesse for Nuxt 2 with Bridge
 - [vitesse-webext](https://github.com/antfu/vitesse-webext) - WebExtension Vite starter template
+- [Nuxtesse](https://github.com/jcamp-code/nuxtesse) - This starter with Tailwind CSS and a few other changes
 
 ## Try it now!
 
