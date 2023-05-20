@@ -26,8 +26,8 @@ devDependencies:
     specifier: ^0.51.13
     version: 0.51.13(postcss@8.4.23)(rollup@2.79.1)(vite@4.3.7)(webpack@5.83.1)
   '@vite-pwa/nuxt':
-    specifier: ^0.0.8
-    version: 0.0.8(@nuxt/kit@3.5.0)(vite-plugin-pwa@0.14.7)
+    specifier: ^0.0.9
+    version: 0.0.9(@nuxt/kit@3.5.0)(vite-plugin-pwa@0.14.7)
   '@vueuse/nuxt':
     specifier: ^10.1.2
     version: 10.1.2(nuxt@3.5.0)(rollup@2.79.1)(vue@3.3.3)
@@ -2949,8 +2949,8 @@ packages:
       - supports-color
     dev: true
 
-  /@vite-pwa/nuxt@0.0.8(@nuxt/kit@3.5.0)(vite-plugin-pwa@0.14.7):
-    resolution: {integrity: sha512-Hq2wVBLJfUnFI1onMs1BBWEWB4O2e4+C+8y9PLCSyYDkOabDKweEQsgwdX5Pr+TUFaLtypm/eMuIpvDk4cypZQ==}
+  /@vite-pwa/nuxt@0.0.9(@nuxt/kit@3.5.0)(vite-plugin-pwa@0.14.7):
+    resolution: {integrity: sha512-MM8av1LiN7Rq5qJ1rjOl9BCjWxO9/3V6D3R7UfIbSL/7f4AnwjwUjM0GHWRcU7dj4t8VhCu7Pq5BrMVnhBGDgw==}
     peerDependencies:
       '@nuxt/kit': ^3.0.0
       vite-plugin-pwa: ^0.14.0
