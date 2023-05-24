@@ -113,8 +113,8 @@ export default defineNuxtConfig({
     // when using generate, payload js assets included in sw precache manifest
     // but missing on offline, disabling extraction it until fixed
     payloadExtraction: false,
-    reactivityTransform: true,
     inlineSSRStyles: false,
+    renderJsonPayloads: true,
     // May disable for error:
     // https://github.com/antfu/vitesse-nuxt3/issues/42#issuecomment-1126377430
     // viteNode: false,
@@ -133,7 +133,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  css: ['~/styles/index.scss'],
+  css: ['~/styles/index.scss', '@unocss/reset/tailwind.css'],
   unocss: {
     attributify: true,
     icons: true,
@@ -144,6 +144,7 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+
   app: {
     head: {
       viewport: 'width=device-width,initial-scale=1',
@@ -162,6 +163,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   pwa,
   // https://github.com/intlify/nuxt3
   // intlify: {
@@ -185,7 +187,7 @@ export default defineNuxtConfig({
       ): void {
         const pagesToRemove = []
         for (const page of pages) {
-          if (pattern.test(page.file)) {
+          if (pattern.test(page.file ?? '')) {
             pagesToRemove.push(page)
           } else {
             removePagesMatching(pattern, page.children)
@@ -198,14 +200,9 @@ export default defineNuxtConfig({
       }
       removePagesMatching(/pages(.*)\/components\/|\.ts$/, pages)
     },
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    'vite:extendConfig': function (config: any, { isServer }: any) {
-      if (isServer) {
-        // Workaround for netlify issue
-        // https://github.com/nuxt/framework/issues/6204
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-        config.build.rollupOptions.output.inlineDynamicImports = true
-      }
-    },
+  },
+
+  devtools: {
+    enabled: true,
   },
 })

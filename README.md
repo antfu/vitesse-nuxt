@@ -25,21 +25,21 @@ References:
 
 ## Features
 
-- [💚 Nuxt 3](https://nuxt.com/) - SSR, ESR, File-based routing, components auto importing, modules, etc.
+- 💚 [Nuxt 3](https://nuxt.com/) - SSR, ESR, File-based routing, components auto importing, modules, etc.
 
 - 🌏 [i18n](https://github.com/intlify/nuxt3) customized intlify i18n - set preferred language according to browser, and save user's preferred language to cookie.
 
 - ⚡️ Vite - Instant HMR
 
-- 🎨 [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine.
+- 🎨 [UnoCSS](https://github.com/unocss/unocss) - The instant on-demand atomic CSS engine.
 
 - 📦 [Element Plus](https://element-plus.org/) - Vue 3 UI component library.
 
-- 😃 Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/antfu/unocss)
+- 😃 Use icons from any icon sets in Pure CSS, powered by [UnoCSS](https://github.com/unocss/unocss).
 
 - 🔥 The `<script setup>` syntax.
 
-- 🍍 [State Management via Pinia](https://pinia.esm.dev), see [./composables/user.ts](./composables/user.ts).
+- 🍍 [State Management via Pinia](https://github.com/vuejs/pinia), see [./composables/user.ts](./composables/user.ts).
 
 - 📑 [Layout system](./layouts).
 
@@ -61,10 +61,11 @@ References:
 ### Nuxt Modules
 
 - [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs.
-- [ColorMode](https://github.com/nuxt-community/color-mode-module) - dark and Light mode with auto detection made easy with Nuxt.
-- [UnoCSS](https://github.com/antfu/unocss) - the instant on-demand atomic CSS engine.
-- [Pinia](https://pinia.esm.dev/) - intuitive, type safe, light and flexible Store for Vue.
+- [ColorMode](https://github.com/nuxt-modules/color-mode) - dark and Light mode with auto detection made easy with Nuxt.
+- [UnoCSS](https://github.com/unocss/unocss) - the instant on-demand atomic CSS engine.
+- [Pinia](https://github.com/vuejs/pinia) - intuitive, type safe, light and flexible Store for Vue.
 - [VitePWA](https://github.com/vite-pwa/nuxt) - zero-config PWA Plugin for Nuxt 3.
+- [DevTools](https://github.com/nuxt/devtools) - unleash Nuxt Developer Experience.
 
 ## IDE
 
