@@ -5,7 +5,7 @@ import { appDescription, appName } from '../constants/index'
 const scope = '/'
 
 export const pwa: ModuleOptions = {
-  mode: 'development',
+  // mode: 'development',
   registerType: 'autoUpdate',
   scope,
   base: scope,
