@@ -8,6 +8,7 @@ function checkHiOnline() {
   hiOffline.value = !online.value && route.path.startsWith('/hi')
 }
 
+// eslint-disable-next-line n/prefer-global/process
 if (process.client)
   watch(() => [online.value, route], checkHiOnline, { immediate: true, flush: 'post' })
 
