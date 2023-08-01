@@ -5,6 +5,7 @@ import { appDescription, appName } from '../constants/index'
 const scope = '/'
 
 export const pwa: ModuleOptions = {
+  // for local build + start workbox messages
   // mode: 'development',
   registerType: 'autoUpdate',
   scope,
@@ -43,18 +44,11 @@ export const pwa: ModuleOptions = {
     runtimeCaching: [
       {
         handler: 'NetworkFirst',
-        urlPattern: ({ url }) => url.pathname.startsWith('/hi/') ? ['hi', url.pathname] : false,
+        urlPattern: ({ sameOrigin, url }) => sameOrigin && url.pathname.startsWith('/hi/'),
         options: {
-          cacheName: 'hi-id-cache',
-          cacheableResponse: {
-            statuses: [200], // only 200 status code will be cached
-          },
-          expiration: {
-            maxEntries: 10, // max 10 entries will be cached
-          },
           plugins: [{
-            // when offline and /hi/<name> missing from cache, the sw will fail, fallback to /
-            handlerDidError: async () => Response.redirect('/', 302),
+            handlerDidError: async () => Response.redirect('/hi', 302),
+            cacheWillUpdate: async () => null,
           }],
         },
       },
