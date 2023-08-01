@@ -13,10 +13,10 @@
     "start:generate": "npx serve .output/public"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.39.8",
+    "@antfu/eslint-config": "^0.40.0",
     "@iconify-json/carbon": "^1.1.18",
     "@iconify-json/twemoji": "^1.1.11",
-    "@nuxt/devtools": "^0.7.2",
+    "@nuxt/devtools": "^0.7.4",
     "@nuxtjs/color-mode": "^3.3.0",
     "@pinia/nuxt": "^0.4.11",
     "@unocss/eslint-config": "^0.54.1",
