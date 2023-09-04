@@ -115,6 +115,7 @@ export default defineNuxtConfig({
     payloadExtraction: false,
     inlineSSRStyles: false,
     renderJsonPayloads: true,
+    typedPages: true,
     // May disable for error:
     // https://github.com/antfu/vitesse-nuxt3/issues/42#issuecomment-1126377430
     // viteNode: false,
