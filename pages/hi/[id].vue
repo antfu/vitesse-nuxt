@@ -4,7 +4,7 @@ const user = useUserStore()
 const name = route.params.id
 
 watchEffect(() => {
-  user.setNewName(route.params.id )
+  user.setNewName(route.params.id)
 })
 
 definePageMeta({

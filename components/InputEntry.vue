@@ -27,7 +27,7 @@ const go = (): void => {
       border="~ rounded gray-200 dark:gray-700"
       outline="none active:none"
       @keydown.enter="go"
-    />
+    >
     <div>
       <button m-3 text-sm btn :disabled="!name" @click="go">
         {{ $t('go') }}

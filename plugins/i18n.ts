@@ -1,6 +1,6 @@
 import { createI18n } from 'vue-i18n'
 
-import locales from '~/locales'
+import locales from '../locales'
 
 const i18n = createI18n({
   legacy: false,
@@ -10,6 +10,6 @@ const i18n = createI18n({
   messages: locales,
 })
 
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin(nuxtApp => {
   nuxtApp.vueApp.use(i18n)
 })

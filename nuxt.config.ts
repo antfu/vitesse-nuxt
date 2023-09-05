@@ -97,7 +97,7 @@ export default defineNuxtConfig({
     (_, nuxt): void => {
       if (process.env.NODE_ENV === 'development') {
         nuxt.options.extensions = nuxt.options.extensions.filter(
-          (ext) => ext !== '.ts',
+          ext => ext !== '.ts',
         )
       }
     },
@@ -181,7 +181,7 @@ export default defineNuxtConfig({
   hooks: {
     // Improved pages module configuration
     // https://github.com/nuxt/nuxt/issues/12333
-    'pages:extend': function (pages) {
+    'pages:extend': function(pages) {
       function removePagesMatching(
         pattern: RegExp,
         pages: NuxtPage[] = [],
