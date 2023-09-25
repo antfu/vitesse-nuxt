@@ -1,3 +1,4 @@
+*.json
 docker
 k8s
 dist
