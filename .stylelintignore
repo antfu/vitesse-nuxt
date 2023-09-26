@@ -1,1 +1,4 @@
+.nuxt
+.output
 dist
+node_modules
