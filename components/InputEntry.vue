@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const name = ref('')
 
-const go = (): void => {
+function go(): void {
   if (name.value) {
     void navigateTo({
       name: 'hi-id',
@@ -9,6 +9,10 @@ const go = (): void => {
     })
   }
 }
+
+const { t } = useI18n({
+  useScope: 'local'
+})
 </script>
 
 <template>
@@ -16,7 +20,7 @@ const go = (): void => {
     <input
       id="input"
       v-model="name"
-      :placeholder="$t('inputName')"
+      :placeholder="t('inputName')"
       type="text"
       autocomplete="off"
       p="x-4 y-2"
@@ -35,3 +39,10 @@ const go = (): void => {
     </div>
   </div>
 </template>
+
+<i18n lang="yaml">
+en:
+  inputName: What's your name?
+zh-CN:
+  inputName: 你的名字？
+</i18n>

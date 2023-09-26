@@ -1,11 +1,11 @@
+import type { Messages } from './en'
+
 export default {
   clientLoading: '客户端加载中效果',
   clientMode: '客户端模式数据',
   ssrLoading: '从其他落地页跳转加载中效果',
   ssrMode: 'SSR模式预加载数据',
-  inputName: '你的名字？',
   go: '确定',
-  visited: '自{time}以来访问了{count}次',
   back: '返回',
   justNow: '刚刚',
   timeAgo: '{0}之前',
@@ -24,4 +24,4 @@ export default {
   months: '月',
   year: '年',
   years: '年',
-}
+} satisfies Messages

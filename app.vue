@@ -11,9 +11,6 @@ useHead({
     },
   ],
 })
-
-const { setPreferredLanguage } = useLocale()
-setPreferredLanguage()
 </script>
 
 <template>

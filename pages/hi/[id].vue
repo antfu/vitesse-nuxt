@@ -10,13 +10,17 @@ watchEffect(() => {
 definePageMeta({
   layout: 'home',
 })
+
+const { t } = useI18n({
+  useScope: 'local'
+})
 </script>
 
 <template>
   <div>
     <div i-twemoji:waving-hand inline-block animate-shake-x animate-duration-5000 text-4xl />
     <h3 text-2xl font-500>
-      Hi,
+      {{ t('hi') }}
     </h3>
     <div text-xl>
       {{ name }}!
@@ -44,8 +48,15 @@ definePageMeta({
         class="btn m-3 text-sm"
         to="/"
       >
-        Back
+        {{ $t('back') }}
       </NuxtLink>
     </div>
   </div>
 </template>
+
+<i18n lang="yaml">
+en:
+  hi: Hi,
+zh-CN:
+  hello: こんにちは、世界!
+</i18n>

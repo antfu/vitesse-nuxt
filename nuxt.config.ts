@@ -1,3 +1,4 @@
+import process from 'node:process'
 import type { NuxtPage } from '@nuxt/schema'
 
 import { pwa } from './config/pwa'
@@ -49,12 +50,12 @@ export default defineNuxtConfig({
     // Enable multi core handling: https://nitro.unjs.io/deploy/node#cluster-mode
     preset: 'node-cluster',
     // Proxy backend APIs
-    devProxy: {
-      '/api': {
-        target: 'http://local.dev:8080/api',
-        changeOrigin: true,
-      },
-    },
+    // devProxy: {
+    //   '/api': {
+    //     target: 'http://local.dev:8080/api',
+    //     changeOrigin: true,
+    //   },
+    // },
     esbuild: {
       options: {
         target: 'esnext',
@@ -88,9 +89,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     '@element-plus/nuxt',
-    // Replaced by `plugin/i18n.ts` for now for this issue:
-    // https://github.com/intlify/nuxt3/issues/68#issuecomment-1139435935
-    // '@intlify/nuxt3',
+    '@nuxtjs/i18n',
 
     // Temporary workaround for `*.ts` files in `pages/` causing errors related to auto route generation
     // https://github.com/nuxt/framework/issues/6920#issuecomment-1232596227
@@ -166,13 +165,14 @@ export default defineNuxtConfig({
   },
 
   pwa,
-  // https://github.com/intlify/nuxt3
-  // intlify: {
-  //   vueI18n: {
-  //     locale: 'zh-CN',
-  //     messages: locales,
-  //   },
-  // },
+  // https://v8.i18n.nuxtjs.org/options/vue-i18n
+  i18n: {
+    // Get URLs with prefixes for every language, but URLs for the default language will also have a non-prefixed version (though the prefixed version will be preferred when detectBrowserLanguage is enabled).
+    strategy: 'no_prefix',
+    // Used for Link localizing
+    locales: ['en', 'zh-CN'], // used in URL path prefix
+    defaultLocale: 'zh-CN', // default locale of your project for Nuxt pages and routing
+  },
   // vite: {
   //   plugins: [],
   // },

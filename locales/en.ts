@@ -1,11 +1,9 @@
-export default {
+const en = {
   clientLoading: 'Loading when client only',
   clientMode: 'Client Mode',
   ssrLoading: 'Loading when jump from other landing page',
   ssrMode: 'Prefetch on SSR Mode',
-  inputName: "What's your name?",
   go: 'Go',
-  visited: '{count} page views since {time}',
   back: 'Back',
   justNow: 'just now',
   timeAgo: '{0} ago',
@@ -25,3 +23,7 @@ export default {
   year: 'year',
   years: 'years',
 }
+
+export default en
+
+export type Messages = typeof en

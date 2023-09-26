@@ -38,6 +38,7 @@
     }
   },
   "dependencies": {
+    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge@8.0.0-rc.4-28251471.09ead69",
     "element-plus": "^2.3.14",
     "pinia": "^2.1.6",
     "rxjs": "^7.8.1",
@@ -65,6 +66,7 @@
     "commitizen": "^4.3.0",
     "consola": "^3.2.3",
     "eslint": "^8.50.0",
+    "eslint-plugin-antfu": "1.0.0-beta.6",
     "lefthook": "^1.5.0",
     "nuxt": "^3.7.3",
     "nuxt-typed-router": "^3.3.1",

@@ -24,6 +24,7 @@
     "*.css": "postcss"
   },
   "editor.formatOnSave": false,
+  "i18n-ally.enabledFrameworks": ["vue", "vue-sfc"],
   "i18n-ally.enabledParsers": ["ts"],
   "i18n-ally.sourceLanguage": "en",
   "i18n-ally.displayLanguage": "en",

@@ -27,7 +27,7 @@ References:
 
 - 💚 [Nuxt 3](https://nuxt.com/) - SSR, ESR, File-based routing, components auto importing, modules, etc.
 
-- 🌏 [i18n](https://github.com/intlify/nuxt3) customized intlify i18n - set preferred language according to browser, and save user's preferred language to cookie.
+- 🌏 [i18n](https://v8.i18n.nuxtjs.org/), powered by @nuxtjs/i18n.
 
 - ⚡️ Vite - Instant HMR
 
