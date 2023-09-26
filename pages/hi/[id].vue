@@ -45,7 +45,7 @@ const { t } = useI18n({
 
     <div>
       <NuxtLink
-        class="btn m-3 text-sm"
+        class="m-3 text-sm btn"
         to="/"
       >
         {{ $t('back') }}

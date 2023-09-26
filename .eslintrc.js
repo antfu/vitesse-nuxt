@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: '@daotl/vue/typescript',
+  extends: ['@daotl/vue/typescript', '@unocss'],
   overrides: [
     {
       files: '*.{ts,tsx,vue}',
