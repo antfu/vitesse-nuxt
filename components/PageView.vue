@@ -4,7 +4,7 @@ const { data } = await useFetch('/api/pageview')
 const time = useTimeAgo(() => data.value?.startAt || 0)
 
 const { t } = useI18n({
-  useScope: 'local'
+  useScope: 'local',
 })
 </script>
 

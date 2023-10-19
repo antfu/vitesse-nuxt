@@ -1,9 +1,0 @@
-docker
-k8s
-dist
-node_modules
-.output
-.nuxt
-plugins/__*.ts
-generated
-node-jiti

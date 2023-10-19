@@ -1,4 +1,5 @@
 import process from 'node:process'
+
 import type { NuxtPage } from '@nuxt/schema'
 
 import { pwa } from './config/pwa'
@@ -96,7 +97,7 @@ export default defineNuxtConfig({
     (_, nuxt): void => {
       if (process.env.NODE_ENV === 'development') {
         nuxt.options.extensions = nuxt.options.extensions.filter(
-          ext => ext !== '.ts',
+          (ext) => ext !== '.ts',
         )
       }
     },
@@ -181,7 +182,7 @@ export default defineNuxtConfig({
   hooks: {
     // Improved pages module configuration
     // https://github.com/nuxt/nuxt/issues/12333
-    'pages:extend': function(pages) {
+    'pages:extend': function (pages) {
       function removePagesMatching(
         pattern: RegExp,
         pages: NuxtPage[] = [],
@@ -190,7 +191,8 @@ export default defineNuxtConfig({
         for (const page of pages) {
           if (pattern.test(page.file ?? '')) {
             pagesToRemove.push(page)
-          } else {
+          }
+          else {
             removePagesMatching(pattern, page.children)
           }
         }
