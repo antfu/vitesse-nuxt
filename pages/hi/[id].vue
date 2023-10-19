@@ -36,8 +36,6 @@ const { t } = useI18n({
             </router-link>
           </li>
         </ul>
-      <!-- Workaround for: https://github.com/prettier/prettier/issues/12388 -->
-      <!-- eslint-disable-next-line prettier/prettier -->
       </p>
     </template>
 
