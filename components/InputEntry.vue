@@ -11,7 +11,7 @@ function go(): void {
 }
 
 const { t } = useI18n({
-  useScope: 'local'
+  useScope: 'local',
 })
 </script>
 

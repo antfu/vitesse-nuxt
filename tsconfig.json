@@ -1,10 +1,10 @@
 {
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "strict": true,
     "lib": ["esnext", "esnext.asynciterable", "dom"],
-    "esModuleInterop": true,
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "strict": true,
+    "esModuleInterop": true
   }
 }

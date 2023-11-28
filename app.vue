@@ -14,11 +14,11 @@ useHead({
 </script>
 
 <template>
-  <el-config-provider>
+  <ElConfigProvider>
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
-  </el-config-provider>
+  </ElConfigProvider>
 </template>
 
 <style lang="scss">
