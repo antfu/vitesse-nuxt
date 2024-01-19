@@ -8,13 +8,13 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
+    'nuxt-module-eslint-config',
   ],
 
   experimental: {
     // when using generate, payload js assets included in sw precache manifest
     // but missing on offline, disabling extraction it until fixed
     payloadExtraction: false,
-    inlineSSRStyles: false,
     renderJsonPayloads: true,
     typedPages: true,
   },
@@ -60,5 +60,14 @@ export default defineNuxtConfig({
 
   devtools: {
     enabled: true,
+  },
+
+  features: {
+    // For UnoCSS
+    inlineStyles: false,
+  },
+
+  eslintConfig: {
+    setup: false,
   },
 })
