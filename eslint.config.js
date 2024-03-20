@@ -6,5 +6,5 @@ export default antfu(
     unocss: true,
     formatters: true,
   },
-  nuxt,
+  nuxt(),
 )
