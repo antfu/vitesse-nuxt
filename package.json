@@ -14,10 +14,10 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.11.3",
+    "@antfu/eslint-config": "^2.11.4",
     "@iconify-json/carbon": "^1.1.31",
     "@iconify-json/twemoji": "^1.1.15",
-    "@nuxt/eslint": "^0.3.0-beta.5",
+    "@nuxt/eslint": "^0.3.0-beta.6",
     "@nuxtjs/color-mode": "^3.3.3",
     "@pinia/nuxt": "^0.5.1",
     "@unocss/eslint-config": "^0.58.7",
