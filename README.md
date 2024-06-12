@@ -7,6 +7,7 @@
 </h2><br>
 
 References:
+
 - https://github.com/antfu/vitesse-nuxt3
 - https://github.com/element-plus/element-plus-nuxt-starter
 - https://github.com/bicouy0/nuxt3-urql
@@ -53,8 +54,7 @@ References:
 
 - 🦾 TypeScript, of course.
 
-- 📲 [PWA](https://github.com/vite-pwa/nuxt) with offline support and auto update behavior.
-
+- 📲 [PWA](https://github.com/vite-pwa/nuxt) with offline support and auto-update behavior.
 
 ## Plugins
 
@@ -103,6 +103,7 @@ pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
 npm run dev
 ```
+
 Website: http://127.0.0.1:3000
 
 ### Deploy
@@ -110,11 +111,13 @@ Website: http://127.0.0.1:3000
 #### Normal server
 
 build
+
 ```
 npm run build
 ```
 
 start
+
 ```
 npm run start
 ```
@@ -138,6 +141,7 @@ upload .output/server/public/* to cdn (cdnURL)
 ##### custom domain (optional)
 
 config customDomain in serverless.yml
+
 ```
 custom:
   customDomain:
@@ -151,6 +155,7 @@ plugins:
 ```
 
 then
+
 ```
 npm run serverless:domain
 ```
@@ -160,4 +165,5 @@ npm run serverless:domain
 ```
 npm run serverless:deploy
 ```
+
 then visit xxx.yourdomain.com

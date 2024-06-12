@@ -17,7 +17,7 @@ jobs:
       - uses: pnpm/action-setup@v2
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: lts/*
           cache: pnpm
 
       - name: Install
@@ -33,7 +33,7 @@ jobs:
       - uses: pnpm/action-setup@v2
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: lts/*
           cache: pnpm
 
       - name: Install
