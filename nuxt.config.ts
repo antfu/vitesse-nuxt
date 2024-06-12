@@ -97,7 +97,7 @@ export default defineNuxtConfig({
     (_, nuxt): void => {
       if (process.env.NODE_ENV === 'development') {
         nuxt.options.extensions = nuxt.options.extensions.filter(
-          (ext) => ext !== '.ts',
+          ext => ext !== '.ts',
         )
       }
     },
@@ -113,7 +113,6 @@ export default defineNuxtConfig({
     // when using generate, payload js assets included in sw precache manifest
     // but missing on offline, disabling extraction it until fixed
     payloadExtraction: false,
-    inlineSSRStyles: false,
     renderJsonPayloads: true,
     typedPages: true,
     // May disable for error:
@@ -201,6 +200,7 @@ export default defineNuxtConfig({
           pages.splice(pages.indexOf(page), 1)
         }
       }
+      // eslint-disable-next-line regexp/no-unused-capturing-group
       removePagesMatching(/pages(.*)\/components\/|\.ts$/, pages)
     },
   },

@@ -1,7 +1,7 @@
 module.exports = {
   extends: ['@commitlint/config-conventional'],
   ignores: [
-    (message) => message.startsWith('Merge ') || message.startsWith('WIP: '),
+    message => message.startsWith('Merge ') || message.startsWith('WIP: '),
   ],
   rules: {
     'type-case': [0],
