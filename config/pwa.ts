@@ -5,6 +5,8 @@ import { appDescription, appName } from '../constants/index'
 const scope = '/'
 
 export const pwa: ModuleOptions = {
+  // for local build + start workbox messages
+  // mode: 'development',
   registerType: 'autoUpdate',
   scope,
   base: scope,
@@ -36,10 +38,20 @@ export const pwa: ModuleOptions = {
   },
   workbox: {
     globPatterns: ['**/*.{js,css,html,txt,png,ico,svg}'],
-    navigateFallbackDenylist: [/^\/api\//],
+    navigateFallbackDenylist: [/^\/api\//, /^\/hi\//],
     navigateFallback: '/',
     cleanupOutdatedCaches: true,
     runtimeCaching: [
+      {
+        handler: 'NetworkFirst',
+        urlPattern: ({ sameOrigin, url }) => sameOrigin && url.pathname.startsWith('/hi/'),
+        options: {
+          plugins: [{
+            handlerDidError: async () => Response.redirect('/hi', 302),
+            cacheWillUpdate: async () => null,
+          }],
+        },
+      },
       {
         urlPattern: /^https:\/\/fonts.googleapis.com\/.*/i,
         handler: 'CacheFirst',

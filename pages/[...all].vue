@@ -1,5 +1,18 @@
 <script setup lang="ts">
 const router = useRouter()
+const route = useRoute()
+const online = useOnline()
+const hiOffline = ref(false)
+
+function checkHiOnline() {
+  hiOffline.value = !online.value && route.path.startsWith('/hi')
+}
+
+// eslint-disable-next-line n/prefer-global/process
+if (process.client)
+  watch(() => [online.value, route], checkHiOnline, { immediate: true, flush: 'post' })
+
+onBeforeMount(checkHiOnline)
 </script>
 
 <template>
@@ -7,7 +20,12 @@ const router = useRouter()
     <div text-4xl>
       <div i-carbon-warning inline-block />
     </div>
-    <div>Not found</div>
+    <div v-if="hiOffline">
+      You're offline, don't refresh the page
+    </div>
+    <div v-else>
+      Not found
+    </div>
     <div>
       <button text-sm btn m="3 t8" @click="router.back()">
         Back
