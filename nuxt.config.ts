@@ -1,5 +1,5 @@
-import { pwa } from './config/pwa'
-import { appDescription } from './constants/index'
+import { pwa } from './app/config/pwa'
+import { appDescription } from './app/constants/index'
 
 export default defineNuxtConfig({
   modules: [
@@ -73,6 +73,10 @@ export default defineNuxtConfig({
     config: {
       standalone: false,
     },
+  },
+
+  future: {
+    compatibilityVersion: 4,
   },
 
   compatibilityDate: '2024-08-14',
