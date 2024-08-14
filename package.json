@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.1.0",
+  "packageManager": "pnpm@9.7.0",
   "scripts": {
     "build": "nuxi build",
     "dev:pwa": "VITE_PLUGIN_PWA=true nuxi dev",
@@ -14,23 +14,23 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.17.0",
-    "@iconify-json/carbon": "^1.1.32",
-    "@iconify-json/twemoji": "^1.1.15",
-    "@nuxt/devtools": "^1.3.1",
-    "@nuxt/eslint": "^0.3.12",
-    "@nuxtjs/color-mode": "^3.4.1",
-    "@pinia/nuxt": "^0.5.1",
-    "@unocss/eslint-config": "^0.60.0",
-    "@unocss/nuxt": "^0.60.0",
-    "@vite-pwa/nuxt": "^0.7.0",
-    "@vueuse/nuxt": "^10.9.0",
+    "@antfu/eslint-config": "^2.25.1",
+    "@iconify-json/carbon": "^1.1.37",
+    "@iconify-json/twemoji": "^1.1.16",
+    "@nuxt/devtools": "^1.3.9",
+    "@nuxt/eslint": "^0.5.0",
+    "@nuxtjs/color-mode": "^3.4.2",
+    "@pinia/nuxt": "^0.5.3",
+    "@unocss/eslint-config": "^0.62.1",
+    "@unocss/nuxt": "^0.62.1",
+    "@vite-pwa/nuxt": "^0.9.1",
+    "@vueuse/nuxt": "^10.11.1",
     "consola": "^3.2.3",
-    "eslint": "^9.2.0",
-    "eslint-plugin-format": "^0.1.1",
-    "nuxt": "^3.11.2",
-    "pinia": "^2.1.7",
-    "typescript": "^5.4.5",
-    "vue-tsc": "^2.0.17"
+    "eslint": "^9.9.0",
+    "eslint-plugin-format": "^0.1.2",
+    "nuxt": "^3.12.4",
+    "pinia": "^2.2.1",
+    "typescript": "^5.5.4",
+    "vue-tsc": "^2.0.29"
   }
 }
