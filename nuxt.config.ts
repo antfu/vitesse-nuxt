@@ -11,33 +11,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
   ],
 
-  experimental: {
-    // when using generate, payload js assets included in sw precache manifest
-    // but missing on offline, disabling extraction it until fixed
-    payloadExtraction: false,
-    renderJsonPayloads: true,
-    typedPages: true,
-  },
-
-  css: [
-    '@unocss/reset/tailwind.css',
-  ],
-
-  colorMode: {
-    classSuffix: '',
-  },
-
-  nitro: {
-    esbuild: {
-      options: {
-        target: 'esnext',
-      },
-    },
-    prerender: {
-      crawlLinks: false,
-      routes: ['/'],
-      ignore: ['/hi'],
-    },
+  devtools: {
+    enabled: true,
   },
 
   app: {
@@ -58,10 +33,16 @@ export default defineNuxtConfig({
     },
   },
 
-  pwa,
+  css: [
+    '@unocss/reset/tailwind.css',
+  ],
 
-  devtools: {
-    enabled: true,
+  colorMode: {
+    classSuffix: '',
+  },
+
+  future: {
+    compatibilityVersion: 4,
   },
 
   features: {
@@ -69,15 +50,37 @@ export default defineNuxtConfig({
     inlineStyles: false,
   },
 
-  eslint: {
-    config: {
-      standalone: false,
-    },
-  },
-
-  future: {
-    compatibilityVersion: 4,
+  experimental: {
+    // when using generate, payload js assets included in sw precache manifest
+    // but missing on offline, disabling extraction it until fixed
+    payloadExtraction: false,
+    renderJsonPayloads: true,
+    typedPages: true,
   },
 
   compatibilityDate: '2024-08-14',
+
+  nitro: {
+    esbuild: {
+      options: {
+        target: 'esnext',
+      },
+    },
+    prerender: {
+      crawlLinks: false,
+      routes: ['/'],
+      ignore: ['/hi'],
+    },
+  },
+
+  eslint: {
+    config: {
+      standalone: false,
+      nuxt: {
+        sortConfigKeys: true,
+      },
+    },
+  },
+
+  pwa,
 })
