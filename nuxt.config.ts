@@ -45,11 +45,6 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
-  features: {
-    // For UnoCSS
-    inlineStyles: false,
-  },
-
   experimental: {
     // when using generate, payload js assets included in sw precache manifest
     // but missing on offline, disabling extraction it until fixed
