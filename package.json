@@ -30,7 +30,7 @@
     "eslint-plugin-format": "^0.1.2",
     "nuxt": "^3.14.1592",
     "pinia": "^2.2.6",
-    "typescript": "5.6.3",
+    "typescript": "~5.6.3",
     "vue-tsc": "^2.1.10"
   }
 }
