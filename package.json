@@ -34,6 +34,7 @@
     "vue-tsc": "^2.1.10"
   },
   "resolutions": {
+    "unplugin": "2.0.0-beta.1",
     "vite": "^6.0.1",
     "vite-plugin-inspect": "^0.10.1"
   }
