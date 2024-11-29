@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.14.2",
+  "packageManager": "pnpm@9.14.3",
   "scripts": {
     "build": "nuxi build",
     "dev:pwa": "VITE_PLUGIN_PWA=true nuxi dev",
@@ -14,7 +14,7 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.11.0",
+    "@antfu/eslint-config": "^3.11.2",
     "@iconify-json/carbon": "^1.2.4",
     "@iconify-json/twemoji": "^1.2.1",
     "@nuxt/devtools": "^1.6.1",
@@ -29,8 +29,12 @@
     "eslint": "^9.15.0",
     "eslint-plugin-format": "^0.1.2",
     "nuxt": "^3.14.1592",
-    "pinia": "^2.2.6",
+    "pinia": "^2.2.8",
     "typescript": "~5.6.3",
     "vue-tsc": "^2.1.10"
+  },
+  "resolutions": {
+    "vite": "^6.0.1",
+    "vite-plugin-inspect": "^0.10.1"
   }
 }
