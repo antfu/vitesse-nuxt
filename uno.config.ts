@@ -4,8 +4,8 @@ import {
   presetAttributify,
   presetIcons,
   presetTypography,
-  presetUno,
   presetWebFonts,
+  presetWind4,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -16,7 +16,7 @@ export default defineConfig({
     ['icon-btn', 'inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600'],
   ],
   presets: [
-    presetUno(),
+    presetWind4(),
     presetAttributify(),
     presetIcons({
       scale: 1.2,

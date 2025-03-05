@@ -14,23 +14,24 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.4.0",
+    "@antfu/eslint-config": "^4.5.1",
     "@iconify-json/carbon": "^1.2.8",
     "@iconify-json/twemoji": "^1.2.2",
     "@nuxt/devtools": "^2.1.3",
     "@nuxt/eslint": "^1.1.0",
     "@nuxtjs/color-mode": "^3.5.2",
     "@pinia/nuxt": "^0.10.1",
-    "@unocss/eslint-config": "^66.0.0",
-    "@unocss/nuxt": "^66.0.0",
+    "@unocss/eslint-config": "^66.1.0-beta.3",
+    "@unocss/nuxt": "^66.1.0-beta.3",
     "@vite-pwa/nuxt": "^0.10.6",
-    "@vueuse/nuxt": "^12.7.0",
+    "@vueuse/nuxt": "^12.8.0",
     "consola": "^3.4.0",
     "eslint": "^9.21.0",
     "eslint-plugin-format": "^1.0.1",
     "nuxt": "^3.15.4",
     "pinia": "^3.0.1",
     "typescript": "^5.8.2",
+    "unocss": "66.1.0-beta.3",
     "vue-tsc": "^2.2.8"
   },
   "pnpm": {
