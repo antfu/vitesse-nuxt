@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.5.2",
+  "packageManager": "pnpm@10.6.5",
   "scripts": {
     "build": "nuxi build",
     "dev:pwa": "VITE_PLUGIN_PWA=true nuxi dev",
@@ -14,35 +14,31 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.5.1",
-    "@iconify-json/carbon": "^1.2.8",
-    "@iconify-json/twemoji": "^1.2.2",
-    "@nuxt/devtools": "^2.2.0",
-    "@nuxt/eslint": "^1.1.0",
-    "@nuxtjs/color-mode": "^3.5.2",
-    "@pinia/nuxt": "^0.10.1",
-    "@unocss/eslint-config": "^66.1.0-beta.3",
-    "@unocss/nuxt": "^66.1.0-beta.3",
-    "@vite-pwa/nuxt": "^0.10.6",
-    "@vueuse/nuxt": "^12.8.0",
-    "consola": "^3.4.0",
-    "eslint": "^9.21.0",
-    "eslint-plugin-format": "^1.0.1",
-    "nuxt": "^3.15.4",
-    "pinia": "^3.0.1",
-    "typescript": "^5.8.2",
-    "unocss": "^66.1.0-beta.3",
-    "vue-tsc": "^2.2.8"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "esbuild"
-    ]
+    "@antfu/eslint-config": "catalog:dev",
+    "@iconify-json/carbon": "catalog:icons",
+    "@iconify-json/twemoji": "catalog:icons",
+    "@nuxt/devtools": "catalog:dev",
+    "@nuxt/eslint": "catalog:dev",
+    "@nuxtjs/color-mode": "catalog:dev",
+    "@pinia/nuxt": "catalog:dev",
+    "@unocss/eslint-config": "catalog:dev",
+    "@unocss/nuxt": "catalog:dev",
+    "@vite-pwa/nuxt": "catalog:dev",
+    "@vueuse/core": "catalog:frontend",
+    "@vueuse/nuxt": "catalog:dev",
+    "consola": "catalog:dev",
+    "eslint": "catalog:dev",
+    "eslint-plugin-format": "catalog:dev",
+    "nuxt": "catalog:dev",
+    "pinia": "catalog:frontend",
+    "typescript": "catalog:dev",
+    "unocss": "catalog:dev",
+    "vue": "catalog:frontend",
+    "vue-tsc": "catalog:dev"
   },
   "resolutions": {
-    "@nuxt/devtools": "^2.2.0",
-    "unplugin": "^2.2.0",
-    "vite": "^6.2.0"
+    "@nuxt/devtools": "catalog:dev",
+    "unplugin": "catalog:dev",
+    "vite": "catalog:dev"
   }
 }

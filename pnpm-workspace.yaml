@@ -1,0 +1,35 @@
+packages: []
+
+catalogs:
+  dev:
+    '@antfu/eslint-config': ^4.11.0
+    '@nuxt/devtools': ^2.3.1
+    '@nuxt/eslint': ^1.2.0
+    '@nuxtjs/color-mode': ^3.5.2
+    '@pinia/nuxt': ^0.10.1
+    '@unocss/eslint-config': ^66.1.0-beta.6
+    '@unocss/nuxt': ^66.1.0-beta.6
+    '@vite-pwa/nuxt': ^0.10.6
+    '@vueuse/nuxt': ^13.0.0
+    consola: ^3.4.2
+    eslint: ^9.23.0
+    eslint-plugin-format: ^1.0.1
+    nuxt: ^3.16.1
+    typescript: ^5.8.2
+    unocss: ^66.1.0-beta.6
+    unplugin: ^2.2.2
+    vite: ^6.2.3
+    vue-tsc: ^2.2.8
+
+  frontend:
+    '@vueuse/core': ^13.0.0
+    pinia: ^3.0.1
+    vue: ^3.5.13
+
+  icons:
+    '@iconify-json/carbon': ^1.2.8
+    '@iconify-json/twemoji': ^1.2.2
+
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - esbuild
