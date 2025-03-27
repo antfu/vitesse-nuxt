@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.6.5",
+  "packageManager": "pnpm@10.7.0",
   "scripts": {
     "build": "nuxi build",
     "dev:pwa": "VITE_PLUGIN_PWA=true nuxi dev",
@@ -17,28 +17,27 @@
     "@antfu/eslint-config": "catalog:dev",
     "@iconify-json/carbon": "catalog:icons",
     "@iconify-json/twemoji": "catalog:icons",
-    "@nuxt/devtools": "catalog:dev",
-    "@nuxt/eslint": "catalog:dev",
-    "@nuxtjs/color-mode": "catalog:dev",
-    "@pinia/nuxt": "catalog:dev",
-    "@unocss/eslint-config": "catalog:dev",
-    "@unocss/nuxt": "catalog:dev",
-    "@vite-pwa/nuxt": "catalog:dev",
+    "@nuxt/devtools": "catalog:build",
+    "@nuxt/eslint": "catalog:build",
+    "@nuxtjs/color-mode": "catalog:build",
+    "@pinia/nuxt": "catalog:build",
+    "@unocss/eslint-config": "catalog:build",
+    "@unocss/nuxt": "catalog:build",
+    "@vite-pwa/nuxt": "catalog:build",
     "@vueuse/core": "catalog:frontend",
-    "@vueuse/nuxt": "catalog:dev",
-    "consola": "catalog:dev",
+    "@vueuse/nuxt": "catalog:build",
     "eslint": "catalog:dev",
     "eslint-plugin-format": "catalog:dev",
-    "nuxt": "catalog:dev",
+    "nuxt": "catalog:build",
     "pinia": "catalog:frontend",
     "typescript": "catalog:dev",
-    "unocss": "catalog:dev",
+    "unocss": "catalog:build",
     "vue": "catalog:frontend",
     "vue-tsc": "catalog:dev"
   },
   "resolutions": {
-    "@nuxt/devtools": "catalog:dev",
-    "unplugin": "catalog:dev",
-    "vite": "catalog:dev"
+    "@nuxt/devtools": "catalog:build",
+    "unplugin": "catalog:build",
+    "vite": "catalog:build"
   }
 }
