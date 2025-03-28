@@ -11,7 +11,7 @@
     "start": "node .output/server/index.mjs",
     "start:generate": "npx serve .output/public",
     "lint": "eslint .",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "nuxi typecheck"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:dev",
