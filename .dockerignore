@@ -1,0 +1,17 @@
+node_modules
+dist
+
+# nuxt
+.nuxt
+.output
+
+# ide
+.vscode
+.idea
+
+# env
+.env
+.git
+
+# chore
+.DS_Store
