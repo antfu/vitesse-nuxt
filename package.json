@@ -3,16 +3,16 @@
   "private": true,
   "packageManager": "pnpm@10.11.0",
   "scripts": {
-    "build": "nuxi build",
-    "dev:pwa": "VITE_PLUGIN_PWA=true nuxi dev",
-    "dev": "nuxi dev",
-    "generate": "nuxi generate",
-    "prepare": "nuxi prepare",
-    "preview": "nuxi preview",
+    "build": "nuxt build",
+    "dev:pwa": "VITE_PLUGIN_PWA=true nuxt dev",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "prepare": "nuxt prepare",
+    "preview": "nuxt preview",
     "start": "node .output/server/index.mjs",
     "start:generate": "npx serve .output/public",
     "lint": "eslint .",
-    "typecheck": "nuxi typecheck"
+    "typecheck": "nuxt typecheck"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:dev",
