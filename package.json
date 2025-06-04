@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@10.11.1",
   "scripts": {
     "build": "nuxt build",
     "dev:pwa": "VITE_PLUGIN_PWA=true nuxt dev",
@@ -38,6 +38,8 @@
   },
   "resolutions": {
     "@nuxt/devtools": "catalog:build",
+    "@nuxt/kit": "catalog:build",
+    "nuxt": "catalog:build",
     "unplugin": "catalog:build",
     "vite": "catalog:build"
   }
