@@ -54,10 +54,16 @@ We recommend using [VS Code](https://code.visualstudio.com/) with [Volar](https:
 
 ## Variations
 
+###### Official
+
 - [vitesse](https://github.com/antfu/vitesse) - Opinionated Vite Starter Template
 - [vitesse-lite](https://github.com/antfu/vitesse-lite) - Lightweight version of Vitesse
 - [vitesse-nuxt-bridge](https://github.com/antfu/vitesse-nuxt-bridge) - Vitesse for Nuxt 2 with Bridge
 - [vitesse-webext](https://github.com/antfu/vitesse-webext) - WebExtension Vite starter template
+
+###### Community
+
+- [nuxt-vant-mobile](https://github.com/easy-temps/nuxt-vant-mobile) by [CharleeWa](https://github.com/CharleeWa) - Like Vitesse-Nuxt, but for mobile apps
 
 ## Try it now!
 
