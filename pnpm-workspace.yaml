@@ -2,26 +2,26 @@ packages: []
 catalogs:
   build:
     '@nuxt/devtools': ^2.6.2
-    '@nuxt/eslint': ^1.4.1
-    '@nuxt/kit': ^3.17.6
+    '@nuxt/eslint': ^1.5.2
+    '@nuxt/kit': ^4.0.0
     '@nuxtjs/color-mode': ^3.5.2
     '@pinia/nuxt': ^0.11.1
-    '@unocss/eslint-config': ^66.3.2
-    '@unocss/nuxt': ^66.3.2
+    '@unocss/eslint-config': ^66.3.3
+    '@unocss/nuxt': ^66.3.3
     '@vite-pwa/nuxt': ^1.0.4
-    '@vueuse/nuxt': ^13.4.0
-    nuxt: ^3.17.6
-    unocss: ^66.3.2
+    '@vueuse/nuxt': ^13.5.0
+    nuxt: ^4.0.0
+    unocss: ^66.3.3
     unplugin: ^2.3.5
-    vite: ^7.0.0
+    vite: ^7.0.4
   dev:
-    '@antfu/eslint-config': ^4.16.1
-    eslint: ^9.30.1
+    '@antfu/eslint-config': ^4.17.0
+    eslint: ^9.31.0
     eslint-plugin-format: ^1.0.1
     typescript: ^5.8.3
-    vue-tsc: ^3.0.0
+    vue-tsc: ^3.0.1
   frontend:
-    '@vueuse/core': ^13.4.0
+    '@vueuse/core': ^13.5.0
     pinia: ^3.0.3
     vue: ^3.5.17
   icons:
