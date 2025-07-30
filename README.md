@@ -3,7 +3,7 @@
 </p>
 
 <h2 align="center">
-<a href="https://github.com/antfu/vitesse">Vitesse</a> for Nuxt 3
+<a href="https://github.com/antfu/vitesse">Vitesse</a> for Nuxt 4
 </h2><br>
 
 <p align="center">
@@ -15,7 +15,7 @@
 
 ## Features
 
-- 💚 [Nuxt 3](https://nuxt.com/) - SSR, ESR, File-based routing, components auto importing, modules, etc.
+- 💚 [Nuxt 4](https://nuxt.com/) - SSR, ESR, File-based routing, components auto importing, modules, etc.
 
 - ⚡️ Vite - Instant HMR.
 
@@ -45,7 +45,7 @@
 - [ColorMode](https://github.com/nuxt-modules/color-mode) - dark and Light mode with auto detection made easy with Nuxt.
 - [UnoCSS](https://github.com/unocss/unocss) - the instant on-demand atomic CSS engine.
 - [Pinia](https://github.com/vuejs/pinia) - intuitive, type safe, light and flexible Store for Vue.
-- [VitePWA](https://github.com/vite-pwa/nuxt) - zero-config PWA Plugin for Nuxt 3.
+- [VitePWA](https://github.com/vite-pwa/nuxt) - zero-config PWA Plugin for Nuxt 4.
 - [DevTools](https://github.com/nuxt/devtools) - unleash Nuxt Developer Experience.
 
 ## IDE
