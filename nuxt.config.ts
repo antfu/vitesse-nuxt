@@ -7,7 +7,6 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
-    '@vite-pwa/nuxt',
     '@nuxt/eslint',
   ],
 
@@ -57,10 +56,13 @@ export default defineNuxtConfig({
         target: 'esnext',
       },
     },
-    prerender: {
-      crawlLinks: false,
-      routes: ['/'],
-      ignore: ['/hi'],
+  },
+
+  vite: {
+    build: {
+      rollupOptions: {
+        debug: {},
+      },
     },
   },
 
@@ -72,6 +74,4 @@ export default defineNuxtConfig({
       },
     },
   },
-
-  pwa,
 })

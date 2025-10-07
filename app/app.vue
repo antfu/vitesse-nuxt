@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { appName } from '~/constants'
 
+if (import.meta.client) {
+  import('@vitejs/devtools/client/inject')
+}
+
 useHead({
   title: appName,
 })

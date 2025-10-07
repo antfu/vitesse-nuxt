@@ -1,4 +1,9 @@
 packages: []
+
+catalog:
+  '@pnpm/logger': ^1001.0.0
+  '@vitejs/devtools': 0.0.0-alpha.5
+
 catalogs:
   build:
     '@nuxt/devtools': ^2.6.5
@@ -13,7 +18,7 @@ catalogs:
     nuxt: ^4.1.2
     unocss: ^66.5.2
     unplugin: ^2.3.10
-    vite: ^7.1.8
+    vite: npm:rolldown-vite@^7.1.14
   dev:
     '@antfu/eslint-config': ^5.4.1
     eslint: ^9.36.0
@@ -27,6 +32,7 @@ catalogs:
   icons:
     '@iconify-json/carbon': ^1.2.13
     '@iconify-json/twemoji': ^1.2.4
+
 onlyBuiltDependencies:
   - '@parcel/watcher'
   - esbuild
