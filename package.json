@@ -12,6 +12,7 @@
     "start": "node .output/server/index.mjs",
     "start:generate": "npx serve .output/public",
     "lint": "eslint .",
+    "test": "vitest",
     "typecheck": "nuxt typecheck"
   },
   "devDependencies": {
@@ -28,6 +29,7 @@
     "@unocss/nuxt": "catalog:build",
     "@vite-pwa/nuxt": "catalog:build",
     "@vitejs/devtools": "catalog:",
+    "@vitest/ui": "catalog:",
     "@vueuse/core": "catalog:frontend",
     "@vueuse/nuxt": "catalog:build",
     "eslint": "catalog:dev",
@@ -36,6 +38,7 @@
     "pinia": "catalog:frontend",
     "typescript": "catalog:dev",
     "unocss": "catalog:build",
+    "vitest": "catalog:",
     "vue": "catalog:frontend",
     "vue-tsc": "catalog:dev"
   },

@@ -2,7 +2,9 @@ packages: []
 
 catalog:
   '@pnpm/logger': ^1001.0.0
-  '@vitejs/devtools': 0.0.0-alpha.5
+  '@vitejs/devtools': 0.0.0-alpha.6
+  '@vitest/ui': ^3.2.4
+  vitest: ^3.2.4
 
 catalogs:
   build:
