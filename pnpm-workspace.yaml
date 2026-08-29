@@ -5,6 +5,11 @@ strictPeerDependencies: false
 autoInstallPeers: false
 trustPolicy: no-downgrade
 
+trustPolicyExclude:
+  - rollup@2.80.0
+  - semver@6.3.1
+  - chokidar@4.0.3
+
 packages: []
 overrides:
   '@nuxt/devtools': 'catalog:build'
