@@ -1,11 +1,17 @@
 minimumReleaseAge: 0
-shamefullyHoist: true
-shellEmulator: true
-strictPeerDependencies: false
-autoInstallPeers: false
+minimumReleaseAgeExcludePrune: true
 trustPolicy: no-downgrade
 
+update:
+  ignoreDeps:
+    - typescript@7
+
+autoInstallPeers: false
+strictPeerDependencies: false
+shamefullyHoist: true
+shellEmulator: true
 packages: []
+
 overrides:
   '@nuxt/devtools': 'catalog:build'
   '@nuxt/kit': 'catalog:build'
@@ -16,42 +22,41 @@ overrides:
   unplugin: 'catalog:build'
   vite: 'catalog:build'
   workbox-build: 7.4.0
+
+allowBuilds:
+  esbuild: true
+  unrs-resolver: true
+
 catalogs:
   build:
-    '@nuxt/devtools': ^3.4.1
+    '@nuxt/devtools': ^4.0.0-alpha.17
     '@nuxt/eslint': ^1.17.0
     '@nuxt/kit': ^4.5.2
     '@nuxtjs/color-mode': ^4.0.1
     '@pinia/nuxt': ^1.0.2
-    '@unocss/eslint-config': ^66.8.1
-    '@unocss/nuxt': ^66.8.1
+    '@unocss/eslint-config': ^66.10.0
+    '@unocss/nuxt': ^66.10.0
     '@vite-pwa/nuxt': ^1.1.1
     '@vueuse/nuxt': ^14.4.0
     chokidar: ^5.0.0
     nuxt: ^4.5.2
     semver: ^7.8.5
-    unocss: ^66.8.1
+    unocss: ^66.10.0
     unplugin: ^3.3.0
     vite: ^8.2.2
   dev:
-    '@antfu/eslint-config': ^9.3.0
-    '@types/node': ^26.2.0
-    eslint: ^10.9.0
+    '@antfu/eslint-config': ^9.5.1
+    '@types/node': ^26.5.0
+    eslint: ^10.10.0
     eslint-plugin-format: ^2.0.1
+    eslint-plugin-slop: ^0.1.3
+    eslint-plugin-sonarjs: ^4.2.0
     typescript: ^6.0.3
     vue-tsc: ^3.3.11
   frontend:
     '@vueuse/core': ^14.4.0
     pinia: ^4.0.3
-    vue: ^3.5.41
+    vue: ^3.5.42
   icons:
-    '@iconify-json/carbon': ^1.2.25
+    '@iconify-json/carbon': ^1.2.26
     '@iconify-json/twemoji': ^1.2.5
-
-update:
-  ignoreDeps:
-    - typescript@7
-
-allowBuilds:
-  esbuild: true
-  unrs-resolver: true

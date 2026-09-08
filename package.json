@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@11.22.0",
+  "packageManager": "pnpm@12.3.4",
   "scripts": {
     "build": "nuxt build",
     "dev:pwa": "VITE_PLUGIN_PWA=true nuxt dev",
@@ -30,6 +30,8 @@
     "@vueuse/nuxt": "catalog:build",
     "eslint": "catalog:dev",
     "eslint-plugin-format": "catalog:dev",
+    "eslint-plugin-slop": "catalog:dev",
+    "eslint-plugin-sonarjs": "catalog:dev",
     "nuxt": "catalog:build",
     "pinia": "catalog:frontend",
     "typescript": "catalog:dev",

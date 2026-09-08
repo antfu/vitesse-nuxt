@@ -7,6 +7,7 @@ export default antfu(
     unocss: true,
     formatters: true,
     pnpm: true,
+    antislop: true,
   },
 )
   .append(nuxt())
