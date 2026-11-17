@@ -1,4 +1,11 @@
 <script setup lang="ts">
+import { watchEffect } from 'vue'
+import { useRoute } from '#app'
+import { definePageMeta } from '#app/composables/pages'
+import { NuxtLink } from '#components'
+import Counter from '~/components/Counter.vue'
+import { useUserStore } from '~/composables/user'
+
 const route = useRoute<'hi-id'>()
 const user = useUserStore()
 const name = route.params.id

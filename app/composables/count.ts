@@ -1,3 +1,5 @@
+import { useState } from '#app'
+
 export function useCount() {
   const count = useState('count', () => Math.round(Math.random() * 20))
 

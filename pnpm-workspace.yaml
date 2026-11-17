@@ -40,6 +40,7 @@ catalogs:
     '@vueuse/nuxt': ^14.4.0
     chokidar: ^5.0.0
     nuxt: ^4.5.2
+    nuxt-explicit-imports: ^0.1.0
     semver: ^7.8.5
     unocss: ^66.10.0
     unplugin: ^3.3.0

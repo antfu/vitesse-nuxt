@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { useHead } from '#app'
+import { useColorMode } from '#imports'
+
 const color = useColorMode()
 
 useHead({

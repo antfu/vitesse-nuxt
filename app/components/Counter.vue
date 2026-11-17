@@ -1,4 +1,6 @@
 <script setup lang='ts'>
+import { useCount } from '~/composables/count'
+
 const { count, inc, dec } = useCount()
 </script>
 

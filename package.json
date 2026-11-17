@@ -33,6 +33,7 @@
     "eslint-plugin-slop": "catalog:dev",
     "eslint-plugin-sonarjs": "catalog:dev",
     "nuxt": "catalog:build",
+    "nuxt-explicit-imports": "catalog:build",
     "pinia": "catalog:frontend",
     "typescript": "catalog:dev",
     "unocss": "catalog:build",

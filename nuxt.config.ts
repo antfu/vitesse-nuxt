@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     '@nuxt/eslint',
+    'nuxt-explicit-imports',
   ],
 
   devtools: {
@@ -71,6 +72,10 @@ export default defineNuxtConfig({
         sortConfigKeys: true,
       },
     },
+  },
+
+  explicitImports: {
+    mode: 'strict',
   },
 
   pwa,

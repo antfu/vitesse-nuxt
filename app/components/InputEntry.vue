@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+import { useRouter } from '#app'
+
 const name = ref('')
 
 const router = useRouter()

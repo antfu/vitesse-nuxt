@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useHead } from '#app'
+import { NuxtLayout, NuxtPage, VitePwaManifest } from '#components'
 import { appName } from '~/constants'
 
 useHead({

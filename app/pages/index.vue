@@ -1,4 +1,11 @@
 <script setup lang="ts">
+import { useOnline } from '@vueuse/core'
+import { definePageMeta } from '#app/composables/pages'
+import { ClientOnly } from '#components'
+import InputEntry from '~/components/InputEntry.vue'
+import Logos from '~/components/Logos.vue'
+import PageView from '~/components/PageView.vue'
+
 definePageMeta({
   layout: 'home',
 })
